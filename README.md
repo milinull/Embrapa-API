@@ -1,3 +1,3 @@
 # Embrapa-API
 
-Embrapa API é um projeto desenvolvido em Django Rest Framework que facilita o acesso ao banco de dados da Embrapa, uma rica fonte de informações sobre uvas, vinhos e derivados. Este sistema foi projetado para oferecer uma maneira eficiente e segura de interagir com os dados, permitindo que desenvolvedores explorem e integrem essas informações em seus projetos.
+Embrapa API é uma solução baseada em Django Rest Framework, projetada para disponibilizar de forma prática e segura o extenso banco de dados da Embrapa. Com informações detalhadas sobre uvas, vinhos e derivados, a API atende a pesquisadores, desenvolvedores e entusiastas, permitindo acesso eficiente e integração fácil desses dados em diferentes iniciativas e aplicações.
