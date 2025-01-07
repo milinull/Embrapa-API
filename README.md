@@ -102,3 +102,15 @@ Certifique-se de ter o seguinte instalado:
 - `GET /exportacao/<categoria>/` - Filtra dados de exportação por categoria.
 
 ---
+
+## **🌐 Deploy na AWS**
+
+A aplicação foi implantada em uma instância de servidor na AWS, configurada para permitir acesso público ao sistema.
+
+### **Tecnologia Utilizada**
+
+- **AWS EC2:** Utilizado para hospedar a aplicação, garantindo escalabilidade e flexibilidade.
+
+A API está disponível publicamente em: [http://56.124.107.183:8000](http://56.124.107.183:8000)
+
+---
