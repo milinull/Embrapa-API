@@ -111,6 +111,6 @@ A aplicação foi implantada em uma instância de servidor na AWS, configurada p
 
 - **AWS EC2:** Utilizado para hospedar a aplicação, garantindo escalabilidade e flexibilidade.
 
-A API está disponível publicamente em: [http://56.124.107.183:8000](http://56.124.107.183:8000)
+A API está disponível publicamente em: [http://56.124.107.183:8000/swagger](http://56.124.107.183:8000/swagger)
 
 ---
