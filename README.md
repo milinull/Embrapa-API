@@ -58,7 +58,7 @@ Certifique-se de ter o seguinte instalado:
 
 6. Acesse a documentação interativa em:
    ```
-http://localhost:8000/swagger/
+    http://localhost:8000/swagger/
    ```
 
 ## ✍️ Uso da API
