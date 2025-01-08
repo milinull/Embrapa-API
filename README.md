@@ -13,7 +13,7 @@ A API oferece acesso a um extenso conjunto de dados relacionados a uvas, vinhos 
 
 Esses dados são estruturados e podem ser acessados por meio de filtros, permitindo consultas detalhadas para análise e integração em outros projetos. A API cobre informações de **1970 a 2023**, oferecendo uma visão histórica e detalhada do mercado vitivinícola ao longo dos anos.
 
-Para acessar todos os dados completos, você pode consultar a [tabela completa de dados disponíveis](link_para_arquivo_csv_ou_pagina_completa).
+Para acessar todos os dados completos, você pode consultar a [tabela completa de dados disponíveis](https://github.com/milinull/Embrapa-API/blob/testes/dir_csv/dados_unicos.csv).
 
 ## ⚙️ Recursos Principais
 - Acesso estruturado aos dados de uvas, vinhos e derivados.
