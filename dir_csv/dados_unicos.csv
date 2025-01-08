@@ -62,10 +62,10 @@ Comercio,produtos,Vinho gaseificado
 Comercio,produtos,Vinho leve
 Comercio,produtos,Vinho licoroso
 Comercio,produtos,nan
-Processamento,tipos,American Hybrid
-Processamento,tipos,Sem Classificação
-Processamento,tipos,Uva de Mesa
-Processamento,tipos,Vinífera
+Processamento,tipo,American Hybrid
+Processamento,tipo,Sem Classificação
+Processamento,tipo,Uva de Mesa
+Processamento,tipo,Vinífera
 Processamento,categorias,BRANCAS
 Processamento,categorias,BRANCAS E ROSADAS
 Processamento,categorias,BRANCAS E ROSADAS_TOTAL
@@ -73,216 +73,216 @@ Processamento,categorias,BRANCAS_TOTAL
 Processamento,categorias,Sem classificação_TOTAL
 Processamento,categorias,TINTAS
 Processamento,categorias,TINTAS_TOTAL
-Processamento,cultivars,Alfrocheiro
-Processamento,cultivars,Aliatico
-Processamento,cultivars,Alicante Bouschet
-Processamento,cultivars,Aligote
-Processamento,cultivars,Alphonse Lavallee
-Processamento,cultivars,Altesse
-Processamento,cultivars,Alvarinho
-Processamento,cultivars,Ancelota
-Processamento,cultivars,Aramon
-Processamento,cultivars,Arinarnoa
-Processamento,cultivars,Arriloba
-Processamento,cultivars,Aspirant Bouschet
-Processamento,cultivars,Auxerrois
-Processamento,cultivars,BRS Bibiana
-Processamento,cultivars,BRS Carmen
-Processamento,cultivars,BRS Clara
-Processamento,cultivars,BRS Cora
-Processamento,cultivars,BRS Lorena
-Processamento,cultivars,BRS Magna
-Processamento,cultivars,BRS Margot
-Processamento,cultivars,BRS Morena
-Processamento,cultivars,BRS Núbia
-Processamento,cultivars,BRS Rúbea
-Processamento,cultivars,BRS Violeta
-Processamento,cultivars,BRS Vitória
-Processamento,cultivars,Bacarina
-Processamento,cultivars,Baco
-Processamento,cultivars,Bailey
-Processamento,cultivars,Barbera
-Processamento,cultivars,Bokay
-Processamento,cultivars,Bonarda
-Processamento,cultivars,Bordo
-Processamento,cultivars,Bourdin (S)
-Processamento,cultivars,Burger
-Processamento,cultivars,Cabernet Franc
-Processamento,cultivars,Cabernet Sauvignon
-Processamento,cultivars,Caladoc
-Processamento,cultivars,Campanario
-Processamento,cultivars,Canaiolo
-Processamento,cultivars,Cardinal
-Processamento,cultivars,Carignan
-Processamento,cultivars,Carmenere
-Processamento,cultivars,Castelão
-Processamento,cultivars,Champagnon (Champanheta)
-Processamento,cultivars,Chardonnay
-Processamento,cultivars,Chasselas
-Processamento,cultivars,Chenin Blanc
-Processamento,cultivars,Cinsaut
-Processamento,cultivars,Clairette(1)
-Processamento,cultivars,Coleções
-Processamento,cultivars,Colombard
-Processamento,cultivars,Concord
-Processamento,cultivars,Concord clone 30
-Processamento,cultivars,Corvina
-Processamento,cultivars,Couderc
-Processamento,cultivars,Couderc 13
-Processamento,cultivars,Croatina
-Processamento,cultivars,Cynthiana(1)
-Processamento,cultivars,Delaware
-Processamento,cultivars,Dolcetto
-Processamento,cultivars,Dom Felder
-Processamento,cultivars,Dona Zillá
-Processamento,cultivars,Durif
-Processamento,cultivars,Dut Chess
-Processamento,cultivars,Egiodola
-Processamento,cultivars,Ekigaina
-Processamento,cultivars,Festival (Sugraone)
-Processamento,cultivars,Flora
-Processamento,cultivars,Franconia
-Processamento,cultivars,Freisa
-Processamento,cultivars,Gamay Beaujolais
-Processamento,cultivars,Gamay St Romain
-Processamento,cultivars,Garganega
-Processamento,cultivars,Gewurztraminer
-Processamento,cultivars,Goethe
-Processamento,cultivars,Golden Queen
-Processamento,cultivars,Gouveio
-Processamento,cultivars,Grand Noir
-Processamento,cultivars,Grenache
-Processamento,cultivars,Gros Manseng
-Processamento,cultivars,Herbemont
-Processamento,cultivars,IAC
-Processamento,cultivars,IAC 138022
-Processamento,cultivars,Isabel
-Processamento,cultivars,Isabel Precoce
-Processamento,cultivars,Italia
-Processamento,cultivars,Italia (Pirovano 65) (PE)
-Processamento,cultivars,Jacquez
-Processamento,cultivars,Jaen
-Processamento,cultivars,Juliana
-Processamento,cultivars,Kyoko
-Processamento,cultivars,Lagrein
-Processamento,cultivars,Lambrusco
-Processamento,cultivars,Landot
-Processamento,cultivars,Maccabeo
-Processamento,cultivars,Malbec
-Processamento,cultivars,Malvasia
-Processamento,cultivars,Malvasia Amarela
-Processamento,cultivars,Malvasia Bianca
-Processamento,cultivars,Malvasia Chianti
-Processamento,cultivars,Malvasia Istriana
-Processamento,cultivars,Malvasia Verde
-Processamento,cultivars,Malvasia di Candia
-Processamento,cultivars,Marselan
-Processamento,cultivars,Martha
-Processamento,cultivars,Marzemina
-Processamento,cultivars,Merlot
-Processamento,cultivars,Mistura de uvas americanas
-Processamento,cultivars,Mistura de uvas americanas tinto
-Processamento,cultivars,Mistura de uvas viníferas branco
-Processamento,cultivars,Mistura de uvas viníferas rosado
-Processamento,cultivars,Mistura de uvas viníferas tinto
-Processamento,cultivars,Molinera
-Processamento,cultivars,Montepulciano
-Processamento,cultivars,Moscato Bailey
-Processamento,cultivars,Moscato Bianco R2
-Processamento,cultivars,Moscato Branco
-Processamento,cultivars,Moscato Canelli
-Processamento,cultivars,Moscato Embrapa
-Processamento,cultivars,Moscato Giallo
-Processamento,cultivars,Moscato Nazareno
-Processamento,cultivars,Moscato Rosado
-Processamento,cultivars,Moscato de Alexandria
-Processamento,cultivars,Moscato de Hamburgo
-Processamento,cultivars,Muller Thurgau
-Processamento,cultivars,Muscadelle
-Processamento,cultivars,Muscat à Petits Grains
-Processamento,cultivars,Napa Gamay
-Processamento,cultivars,Nebbiolo
-Processamento,cultivars,Niagara
-Processamento,cultivars,Niagara Branca
-Processamento,cultivars,Niagara Rosada
-Processamento,cultivars,Oberlin
-Processamento,cultivars,Ora
-Processamento,cultivars,Othello
-Processamento,cultivars,Outras(2)
-Processamento,cultivars,Outras(3)
-Processamento,cultivars,Outras1
-Processamento,cultivars,Paco
-Processamento,cultivars,Palomino
-Processamento,cultivars,Patricia
-Processamento,cultivars,Patrícia
-Processamento,cultivars,Perlona
-Processamento,cultivars,Petit Manseng
-Processamento,cultivars,Petit Verdot
-Processamento,cultivars,Petite Sirah
-Processamento,cultivars,Peverella
-Processamento,cultivars,Pinot Blanc
-Processamento,cultivars,Pinot Gris
-Processamento,cultivars,Pinot Noir
-Processamento,cultivars,Pinot Saint George
-Processamento,cultivars,Pinotage
-Processamento,cultivars,Piriquita
-Processamento,cultivars,Poloske
-Processamento,cultivars,Primitivo
-Processamento,cultivars,Prosecco
-Processamento,cultivars,Rebo
-Processamento,cultivars,Red Veltliner
-Processamento,cultivars,Refosco
-Processamento,cultivars,Riesling Italico
-Processamento,cultivars,Riesling Renano
-Processamento,cultivars,Rondinella
-Processamento,cultivars,"Rubi (Itália, Itália Ro)"
-Processamento,cultivars,Ruby Cabernet
-Processamento,cultivars,Sangiovese
-Processamento,cultivars,Saperavi
-Processamento,cultivars,Sauvignon Blanc(2)
-Processamento,cultivars,Sauvignon Gris
-Processamento,cultivars,Schonburger
-Processamento,cultivars,Seara Nova
-Processamento,cultivars,Seibel
-Processamento,cultivars,Seibel 2 (seibeleto)
-Processamento,cultivars,Seleções
-Processamento,cultivars,Semillon
-Processamento,cultivars,Seyve Villard
-Processamento,cultivars,Seyve Villard 12375
-Processamento,cultivars,Seyve Villard 5276
-Processamento,cultivars,Seyve Willard (Tinta)
-Processamento,cultivars,Sira (falsa)
-Processamento,cultivars,Sylvaner
-Processamento,cultivars,Tannat
-Processamento,cultivars,Tardia de Caxias
-Processamento,cultivars,Tempranillo
-Processamento,cultivars,Teroldego
-Processamento,cultivars,Tinta Barroca
-Processamento,cultivars,Tinta Madeira
-Processamento,cultivars,Tinta Roriz
-Processamento,cultivars,Tintoria
-Processamento,cultivars,Tocai Friulano
-Processamento,cultivars,Torrontes
-Processamento,cultivars,Touriga Francesa
-Processamento,cultivars,Touriga Nacional
-Processamento,cultivars,Trebbiano
-Processamento,cultivars,Trebbiano Toscano
-Processamento,cultivars,Trincdeira
-Processamento,cultivars,Trousseau
-Processamento,cultivars,Verdea
-Processamento,cultivars,Verdelho
-Processamento,cultivars,Verdiso
-Processamento,cultivars,Vermentino
-Processamento,cultivars,Vernaccia
-Processamento,cultivars,Viogner
-Processamento,cultivars,Viognier
-Processamento,cultivars,Vênus
-Processamento,cultivars,Zinfandel
-Processamento,cultivars,nan
-Exportacao,tipos,Espumantes
-Exportacao,tipos,Suco de Uva
-Exportacao,tipos,Uvas Frescas
-Exportacao,tipos,Vinho de Mesa
+Processamento,cultivar,Alfrocheiro
+Processamento,cultivar,Aliatico
+Processamento,cultivar,Alicante Bouschet
+Processamento,cultivar,Aligote
+Processamento,cultivar,Alphonse Lavallee
+Processamento,cultivar,Altesse
+Processamento,cultivar,Alvarinho
+Processamento,cultivar,Ancelota
+Processamento,cultivar,Aramon
+Processamento,cultivar,Arinarnoa
+Processamento,cultivar,Arriloba
+Processamento,cultivar,Aspirant Bouschet
+Processamento,cultivar,Auxerrois
+Processamento,cultivar,BRS Bibiana
+Processamento,cultivar,BRS Carmen
+Processamento,cultivar,BRS Clara
+Processamento,cultivar,BRS Cora
+Processamento,cultivar,BRS Lorena
+Processamento,cultivar,BRS Magna
+Processamento,cultivar,BRS Margot
+Processamento,cultivar,BRS Morena
+Processamento,cultivar,BRS Núbia
+Processamento,cultivar,BRS Rúbea
+Processamento,cultivar,BRS Violeta
+Processamento,cultivar,BRS Vitória
+Processamento,cultivar,Bacarina
+Processamento,cultivar,Baco
+Processamento,cultivar,Bailey
+Processamento,cultivar,Barbera
+Processamento,cultivar,Bokay
+Processamento,cultivar,Bonarda
+Processamento,cultivar,Bordo
+Processamento,cultivar,Bourdin (S)
+Processamento,cultivar,Burger
+Processamento,cultivar,Cabernet Franc
+Processamento,cultivar,Cabernet Sauvignon
+Processamento,cultivar,Caladoc
+Processamento,cultivar,Campanario
+Processamento,cultivar,Canaiolo
+Processamento,cultivar,Cardinal
+Processamento,cultivar,Carignan
+Processamento,cultivar,Carmenere
+Processamento,cultivar,Castelão
+Processamento,cultivar,Champagnon (Champanheta)
+Processamento,cultivar,Chardonnay
+Processamento,cultivar,Chasselas
+Processamento,cultivar,Chenin Blanc
+Processamento,cultivar,Cinsaut
+Processamento,cultivar,Clairette(1)
+Processamento,cultivar,Coleções
+Processamento,cultivar,Colombard
+Processamento,cultivar,Concord
+Processamento,cultivar,Concord clone 30
+Processamento,cultivar,Corvina
+Processamento,cultivar,Couderc
+Processamento,cultivar,Couderc 13
+Processamento,cultivar,Croatina
+Processamento,cultivar,Cynthiana(1)
+Processamento,cultivar,Delaware
+Processamento,cultivar,Dolcetto
+Processamento,cultivar,Dom Felder
+Processamento,cultivar,Dona Zillá
+Processamento,cultivar,Durif
+Processamento,cultivar,Dut Chess
+Processamento,cultivar,Egiodola
+Processamento,cultivar,Ekigaina
+Processamento,cultivar,Festival (Sugraone)
+Processamento,cultivar,Flora
+Processamento,cultivar,Franconia
+Processamento,cultivar,Freisa
+Processamento,cultivar,Gamay Beaujolais
+Processamento,cultivar,Gamay St Romain
+Processamento,cultivar,Garganega
+Processamento,cultivar,Gewurztraminer
+Processamento,cultivar,Goethe
+Processamento,cultivar,Golden Queen
+Processamento,cultivar,Gouveio
+Processamento,cultivar,Grand Noir
+Processamento,cultivar,Grenache
+Processamento,cultivar,Gros Manseng
+Processamento,cultivar,Herbemont
+Processamento,cultivar,IAC
+Processamento,cultivar,IAC 138022
+Processamento,cultivar,Isabel
+Processamento,cultivar,Isabel Precoce
+Processamento,cultivar,Italia
+Processamento,cultivar,Italia (Pirovano 65) (PE)
+Processamento,cultivar,Jacquez
+Processamento,cultivar,Jaen
+Processamento,cultivar,Juliana
+Processamento,cultivar,Kyoko
+Processamento,cultivar,Lagrein
+Processamento,cultivar,Lambrusco
+Processamento,cultivar,Landot
+Processamento,cultivar,Maccabeo
+Processamento,cultivar,Malbec
+Processamento,cultivar,Malvasia
+Processamento,cultivar,Malvasia Amarela
+Processamento,cultivar,Malvasia Bianca
+Processamento,cultivar,Malvasia Chianti
+Processamento,cultivar,Malvasia Istriana
+Processamento,cultivar,Malvasia Verde
+Processamento,cultivar,Malvasia di Candia
+Processamento,cultivar,Marselan
+Processamento,cultivar,Martha
+Processamento,cultivar,Marzemina
+Processamento,cultivar,Merlot
+Processamento,cultivar,Mistura de uvas americanas
+Processamento,cultivar,Mistura de uvas americanas tinto
+Processamento,cultivar,Mistura de uvas viníferas branco
+Processamento,cultivar,Mistura de uvas viníferas rosado
+Processamento,cultivar,Mistura de uvas viníferas tinto
+Processamento,cultivar,Molinera
+Processamento,cultivar,Montepulciano
+Processamento,cultivar,Moscato Bailey
+Processamento,cultivar,Moscato Bianco R2
+Processamento,cultivar,Moscato Branco
+Processamento,cultivar,Moscato Canelli
+Processamento,cultivar,Moscato Embrapa
+Processamento,cultivar,Moscato Giallo
+Processamento,cultivar,Moscato Nazareno
+Processamento,cultivar,Moscato Rosado
+Processamento,cultivar,Moscato de Alexandria
+Processamento,cultivar,Moscato de Hamburgo
+Processamento,cultivar,Muller Thurgau
+Processamento,cultivar,Muscadelle
+Processamento,cultivar,Muscat à Petits Grains
+Processamento,cultivar,Napa Gamay
+Processamento,cultivar,Nebbiolo
+Processamento,cultivar,Niagara
+Processamento,cultivar,Niagara Branca
+Processamento,cultivar,Niagara Rosada
+Processamento,cultivar,Oberlin
+Processamento,cultivar,Ora
+Processamento,cultivar,Othello
+Processamento,cultivar,Outras(2)
+Processamento,cultivar,Outras(3)
+Processamento,cultivar,Outras1
+Processamento,cultivar,Paco
+Processamento,cultivar,Palomino
+Processamento,cultivar,Patricia
+Processamento,cultivar,Patrícia
+Processamento,cultivar,Perlona
+Processamento,cultivar,Petit Manseng
+Processamento,cultivar,Petit Verdot
+Processamento,cultivar,Petite Sirah
+Processamento,cultivar,Peverella
+Processamento,cultivar,Pinot Blanc
+Processamento,cultivar,Pinot Gris
+Processamento,cultivar,Pinot Noir
+Processamento,cultivar,Pinot Saint George
+Processamento,cultivar,Pinotage
+Processamento,cultivar,Piriquita
+Processamento,cultivar,Poloske
+Processamento,cultivar,Primitivo
+Processamento,cultivar,Prosecco
+Processamento,cultivar,Rebo
+Processamento,cultivar,Red Veltliner
+Processamento,cultivar,Refosco
+Processamento,cultivar,Riesling Italico
+Processamento,cultivar,Riesling Renano
+Processamento,cultivar,Rondinella
+Processamento,cultivar,"Rubi (Itália, Itália Ro)"
+Processamento,cultivar,Ruby Cabernet
+Processamento,cultivar,Sangiovese
+Processamento,cultivar,Saperavi
+Processamento,cultivar,Sauvignon Blanc(2)
+Processamento,cultivar,Sauvignon Gris
+Processamento,cultivar,Schonburger
+Processamento,cultivar,Seara Nova
+Processamento,cultivar,Seibel
+Processamento,cultivar,Seibel 2 (seibeleto)
+Processamento,cultivar,Seleções
+Processamento,cultivar,Semillon
+Processamento,cultivar,Seyve Villard
+Processamento,cultivar,Seyve Villard 12375
+Processamento,cultivar,Seyve Villard 5276
+Processamento,cultivar,Seyve Willard (Tinta)
+Processamento,cultivar,Sira (falsa)
+Processamento,cultivar,Sylvaner
+Processamento,cultivar,Tannat
+Processamento,cultivar,Tardia de Caxias
+Processamento,cultivar,Tempranillo
+Processamento,cultivar,Teroldego
+Processamento,cultivar,Tinta Barroca
+Processamento,cultivar,Tinta Madeira
+Processamento,cultivar,Tinta Roriz
+Processamento,cultivar,Tintoria
+Processamento,cultivar,Tocai Friulano
+Processamento,cultivar,Torrontes
+Processamento,cultivar,Touriga Francesa
+Processamento,cultivar,Touriga Nacional
+Processamento,cultivar,Trebbiano
+Processamento,cultivar,Trebbiano Toscano
+Processamento,cultivar,Trincdeira
+Processamento,cultivar,Trousseau
+Processamento,cultivar,Verdea
+Processamento,cultivar,Verdelho
+Processamento,cultivar,Verdiso
+Processamento,cultivar,Vermentino
+Processamento,cultivar,Vernaccia
+Processamento,cultivar,Viogner
+Processamento,cultivar,Viognier
+Processamento,cultivar,Vênus
+Processamento,cultivar,Zinfandel
+Processamento,cultivar,nan
+Exportacao,tipo,Espumantes
+Exportacao,tipo,Suco de Uva
+Exportacao,tipo,Uvas Frescas
+Exportacao,tipo,Vinho de Mesa
 Exportacao,paises,Afeganistão
 Exportacao,paises,Africa do Sul
 Exportacao,paises,Alemanha
@@ -489,11 +489,11 @@ Exportacao,paises,Vietnã
 Exportacao,paises,África do Sul
 Exportacao,paises,Áustria
 Exportacao,paises,Índia
-Importacao,tipos,Espumantes
-Importacao,tipos,Suco de Uva
-Importacao,tipos,Uvas Frescas
-Importacao,tipos,Uvas Passas
-Importacao,tipos,Vinho de Mesa
+Importacao,tipo,Espumantes
+Importacao,tipo,Suco de Uva
+Importacao,tipo,Uvas Frescas
+Importacao,tipo,Uvas Passas
+Importacao,tipo,Vinho de Mesa
 Importacao,paises,Afeganistão
 Importacao,paises,Africa do Sul
 Importacao,paises,Alemanha
