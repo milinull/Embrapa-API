@@ -91,15 +91,15 @@ Certifique-se de ter o seguinte instalado:
 ### Exemplos de Endpoints
 #### Produção
 - `GET /producao/` - Retorna dados gerais de produção.
-- `GET /producao/<categoria>/` - Filtra dados de produção por categoria.
+- `GET /producao/?search=<categoria>/` - Filtra dados de produção por categoria.
 
 #### Importações
 - `GET /importacao/` - Retorna dados gerais de importações.
-- `GET /importacao/<categoria>/` - Filtra dados de importação por categoria.
+- `GET /importacao/?search=<categoria>/` - Filtra dados de importação por categoria.
 
 #### Exportações
 - `GET /exportacao/` - Retorna dados gerais de exportações.
-- `GET /exportacao/<categoria>/` - Filtra dados de exportação por categoria.
+- `GET /exportacao/?search=<categoria>/` - Filtra dados de exportação por categoria.
 
 ---
 
