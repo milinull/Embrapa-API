@@ -58,7 +58,7 @@ def obter_valores_unicos():
 
 def salvar_tabela_em_csv(dados, caminho_arquivo="dados_unicos.csv"):
     """
-    Salva os dados em formato CSV com codificação UTF-8 e os coloca de forma vertical.
+    Salva os dados em formato CSV com codificação UTF-8 e os coloca de forma vertical
     """
     with open(caminho_arquivo, "w", newline="", encoding="utf-8") as f:
         writer = csv.writer(f)
