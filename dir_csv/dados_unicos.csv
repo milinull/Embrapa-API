@@ -1,0 +1,589 @@
+Comercio,categorias,ESPUMANTES
+Comercio,categorias,ESPUMANTES_TOTAL
+Comercio,categorias,OUTROS PRODUTOS COMERCIALIZADOS
+Comercio,categorias,OUTROS PRODUTOS COMERCIALIZADOS_TOTAL
+Comercio,categorias,SUCO DE UVAS
+Comercio,categorias,SUCO DE UVAS CONCENTRADO_TOTAL
+Comercio,categorias,SUCO DE UVAS_TOTAL
+Comercio,categorias,VINHO DE MESA
+Comercio,categorias,VINHO DE MESA_TOTAL
+Comercio,categorias,VINHO ESPECIAL
+Comercio,categorias,VINHO ESPECIAL_TOTAL
+Comercio,categorias,VINHO FINO DE MESA
+Comercio,categorias,VINHO FINO DE MESA_TOTAL
+Comercio,categorias,VINHO FRIZANTE_TOTAL
+Comercio,categorias,VINHO ORGÂNICO_TOTAL
+Comercio,produtos,"Agrin (fermentado, acetico misto)"
+Comercio,produtos,Aguardente de vinho 50°gl
+Comercio,produtos,Alcool vinico
+Comercio,produtos,Bagaceira (graspa)
+Comercio,produtos,Base champenoise champanha
+Comercio,produtos,Base charmat champanha
+Comercio,produtos,Base espumante moscatel
+Comercio,produtos,Bebida de uva
+Comercio,produtos,Borra líquida
+Comercio,produtos,Borra seca
+Comercio,produtos,Branco
+Comercio,produtos,Brandy (conhaque)
+Comercio,produtos,Cooler
+Comercio,produtos,Coquetel com vinho
+Comercio,produtos,Destilado de vinho
+Comercio,produtos,Espumante
+Comercio,produtos,Espumante  Moscatel
+Comercio,produtos,Espumante Orgânico
+Comercio,produtos,Filtrado doce
+Comercio,produtos,Jeropiga
+Comercio,produtos,Mistelas
+Comercio,produtos,Mosto concentrado
+Comercio,produtos,Mosto de uva
+Comercio,produtos,Mosto sulfitado
+Comercio,produtos,Nectar de uva
+Comercio,produtos,Outros produtos
+Comercio,produtos,Outros sucos de uvas
+Comercio,produtos,Outros vinhos (sem informação detalhada)
+Comercio,produtos,Polpa de uva
+Comercio,produtos,Preparado líquido para refresco
+Comercio,produtos,Refrigerante +50% suco
+Comercio,produtos,Rosado
+Comercio,produtos,Sangria
+Comercio,produtos,Suco Adoçado
+Comercio,produtos,Suco Natural Integral
+Comercio,produtos,Suco Orgânico
+Comercio,produtos,Suco Reprocessado/reconstituido
+Comercio,produtos,Tinto
+Comercio,produtos,Vinagre balsamico
+Comercio,produtos,Vinagre duplo
+Comercio,produtos,Vinagre simples
+Comercio,produtos,Vinho acetificado
+Comercio,produtos,Vinho base para espumantes
+Comercio,produtos,Vinho composto
+Comercio,produtos,Vinho gaseificado
+Comercio,produtos,Vinho leve
+Comercio,produtos,Vinho licoroso
+Comercio,produtos,nan
+Processamento,tipos,American Hybrid
+Processamento,tipos,Sem Classificação
+Processamento,tipos,Uva de Mesa
+Processamento,tipos,Vinífera
+Processamento,categorias,BRANCAS
+Processamento,categorias,BRANCAS E ROSADAS
+Processamento,categorias,BRANCAS E ROSADAS_TOTAL
+Processamento,categorias,BRANCAS_TOTAL
+Processamento,categorias,Sem classificação_TOTAL
+Processamento,categorias,TINTAS
+Processamento,categorias,TINTAS_TOTAL
+Processamento,cultivars,Alfrocheiro
+Processamento,cultivars,Aliatico
+Processamento,cultivars,Alicante Bouschet
+Processamento,cultivars,Aligote
+Processamento,cultivars,Alphonse Lavallee
+Processamento,cultivars,Altesse
+Processamento,cultivars,Alvarinho
+Processamento,cultivars,Ancelota
+Processamento,cultivars,Aramon
+Processamento,cultivars,Arinarnoa
+Processamento,cultivars,Arriloba
+Processamento,cultivars,Aspirant Bouschet
+Processamento,cultivars,Auxerrois
+Processamento,cultivars,BRS Bibiana
+Processamento,cultivars,BRS Carmen
+Processamento,cultivars,BRS Clara
+Processamento,cultivars,BRS Cora
+Processamento,cultivars,BRS Lorena
+Processamento,cultivars,BRS Magna
+Processamento,cultivars,BRS Margot
+Processamento,cultivars,BRS Morena
+Processamento,cultivars,BRS Núbia
+Processamento,cultivars,BRS Rúbea
+Processamento,cultivars,BRS Violeta
+Processamento,cultivars,BRS Vitória
+Processamento,cultivars,Bacarina
+Processamento,cultivars,Baco
+Processamento,cultivars,Bailey
+Processamento,cultivars,Barbera
+Processamento,cultivars,Bokay
+Processamento,cultivars,Bonarda
+Processamento,cultivars,Bordo
+Processamento,cultivars,Bourdin (S)
+Processamento,cultivars,Burger
+Processamento,cultivars,Cabernet Franc
+Processamento,cultivars,Cabernet Sauvignon
+Processamento,cultivars,Caladoc
+Processamento,cultivars,Campanario
+Processamento,cultivars,Canaiolo
+Processamento,cultivars,Cardinal
+Processamento,cultivars,Carignan
+Processamento,cultivars,Carmenere
+Processamento,cultivars,Castelão
+Processamento,cultivars,Champagnon (Champanheta)
+Processamento,cultivars,Chardonnay
+Processamento,cultivars,Chasselas
+Processamento,cultivars,Chenin Blanc
+Processamento,cultivars,Cinsaut
+Processamento,cultivars,Clairette(1)
+Processamento,cultivars,Coleções
+Processamento,cultivars,Colombard
+Processamento,cultivars,Concord
+Processamento,cultivars,Concord clone 30
+Processamento,cultivars,Corvina
+Processamento,cultivars,Couderc
+Processamento,cultivars,Couderc 13
+Processamento,cultivars,Croatina
+Processamento,cultivars,Cynthiana(1)
+Processamento,cultivars,Delaware
+Processamento,cultivars,Dolcetto
+Processamento,cultivars,Dom Felder
+Processamento,cultivars,Dona Zillá
+Processamento,cultivars,Durif
+Processamento,cultivars,Dut Chess
+Processamento,cultivars,Egiodola
+Processamento,cultivars,Ekigaina
+Processamento,cultivars,Festival (Sugraone)
+Processamento,cultivars,Flora
+Processamento,cultivars,Franconia
+Processamento,cultivars,Freisa
+Processamento,cultivars,Gamay Beaujolais
+Processamento,cultivars,Gamay St Romain
+Processamento,cultivars,Garganega
+Processamento,cultivars,Gewurztraminer
+Processamento,cultivars,Goethe
+Processamento,cultivars,Golden Queen
+Processamento,cultivars,Gouveio
+Processamento,cultivars,Grand Noir
+Processamento,cultivars,Grenache
+Processamento,cultivars,Gros Manseng
+Processamento,cultivars,Herbemont
+Processamento,cultivars,IAC
+Processamento,cultivars,IAC 138022
+Processamento,cultivars,Isabel
+Processamento,cultivars,Isabel Precoce
+Processamento,cultivars,Italia
+Processamento,cultivars,Italia (Pirovano 65) (PE)
+Processamento,cultivars,Jacquez
+Processamento,cultivars,Jaen
+Processamento,cultivars,Juliana
+Processamento,cultivars,Kyoko
+Processamento,cultivars,Lagrein
+Processamento,cultivars,Lambrusco
+Processamento,cultivars,Landot
+Processamento,cultivars,Maccabeo
+Processamento,cultivars,Malbec
+Processamento,cultivars,Malvasia
+Processamento,cultivars,Malvasia Amarela
+Processamento,cultivars,Malvasia Bianca
+Processamento,cultivars,Malvasia Chianti
+Processamento,cultivars,Malvasia Istriana
+Processamento,cultivars,Malvasia Verde
+Processamento,cultivars,Malvasia di Candia
+Processamento,cultivars,Marselan
+Processamento,cultivars,Martha
+Processamento,cultivars,Marzemina
+Processamento,cultivars,Merlot
+Processamento,cultivars,Mistura de uvas americanas
+Processamento,cultivars,Mistura de uvas americanas tinto
+Processamento,cultivars,Mistura de uvas viníferas branco
+Processamento,cultivars,Mistura de uvas viníferas rosado
+Processamento,cultivars,Mistura de uvas viníferas tinto
+Processamento,cultivars,Molinera
+Processamento,cultivars,Montepulciano
+Processamento,cultivars,Moscato Bailey
+Processamento,cultivars,Moscato Bianco R2
+Processamento,cultivars,Moscato Branco
+Processamento,cultivars,Moscato Canelli
+Processamento,cultivars,Moscato Embrapa
+Processamento,cultivars,Moscato Giallo
+Processamento,cultivars,Moscato Nazareno
+Processamento,cultivars,Moscato Rosado
+Processamento,cultivars,Moscato de Alexandria
+Processamento,cultivars,Moscato de Hamburgo
+Processamento,cultivars,Muller Thurgau
+Processamento,cultivars,Muscadelle
+Processamento,cultivars,Muscat à Petits Grains
+Processamento,cultivars,Napa Gamay
+Processamento,cultivars,Nebbiolo
+Processamento,cultivars,Niagara
+Processamento,cultivars,Niagara Branca
+Processamento,cultivars,Niagara Rosada
+Processamento,cultivars,Oberlin
+Processamento,cultivars,Ora
+Processamento,cultivars,Othello
+Processamento,cultivars,Outras(2)
+Processamento,cultivars,Outras(3)
+Processamento,cultivars,Outras1
+Processamento,cultivars,Paco
+Processamento,cultivars,Palomino
+Processamento,cultivars,Patricia
+Processamento,cultivars,Patrícia
+Processamento,cultivars,Perlona
+Processamento,cultivars,Petit Manseng
+Processamento,cultivars,Petit Verdot
+Processamento,cultivars,Petite Sirah
+Processamento,cultivars,Peverella
+Processamento,cultivars,Pinot Blanc
+Processamento,cultivars,Pinot Gris
+Processamento,cultivars,Pinot Noir
+Processamento,cultivars,Pinot Saint George
+Processamento,cultivars,Pinotage
+Processamento,cultivars,Piriquita
+Processamento,cultivars,Poloske
+Processamento,cultivars,Primitivo
+Processamento,cultivars,Prosecco
+Processamento,cultivars,Rebo
+Processamento,cultivars,Red Veltliner
+Processamento,cultivars,Refosco
+Processamento,cultivars,Riesling Italico
+Processamento,cultivars,Riesling Renano
+Processamento,cultivars,Rondinella
+Processamento,cultivars,"Rubi (Itália, Itália Ro)"
+Processamento,cultivars,Ruby Cabernet
+Processamento,cultivars,Sangiovese
+Processamento,cultivars,Saperavi
+Processamento,cultivars,Sauvignon Blanc(2)
+Processamento,cultivars,Sauvignon Gris
+Processamento,cultivars,Schonburger
+Processamento,cultivars,Seara Nova
+Processamento,cultivars,Seibel
+Processamento,cultivars,Seibel 2 (seibeleto)
+Processamento,cultivars,Seleções
+Processamento,cultivars,Semillon
+Processamento,cultivars,Seyve Villard
+Processamento,cultivars,Seyve Villard 12375
+Processamento,cultivars,Seyve Villard 5276
+Processamento,cultivars,Seyve Willard (Tinta)
+Processamento,cultivars,Sira (falsa)
+Processamento,cultivars,Sylvaner
+Processamento,cultivars,Tannat
+Processamento,cultivars,Tardia de Caxias
+Processamento,cultivars,Tempranillo
+Processamento,cultivars,Teroldego
+Processamento,cultivars,Tinta Barroca
+Processamento,cultivars,Tinta Madeira
+Processamento,cultivars,Tinta Roriz
+Processamento,cultivars,Tintoria
+Processamento,cultivars,Tocai Friulano
+Processamento,cultivars,Torrontes
+Processamento,cultivars,Touriga Francesa
+Processamento,cultivars,Touriga Nacional
+Processamento,cultivars,Trebbiano
+Processamento,cultivars,Trebbiano Toscano
+Processamento,cultivars,Trincdeira
+Processamento,cultivars,Trousseau
+Processamento,cultivars,Verdea
+Processamento,cultivars,Verdelho
+Processamento,cultivars,Verdiso
+Processamento,cultivars,Vermentino
+Processamento,cultivars,Vernaccia
+Processamento,cultivars,Viogner
+Processamento,cultivars,Viognier
+Processamento,cultivars,Vênus
+Processamento,cultivars,Zinfandel
+Processamento,cultivars,nan
+Exportacao,tipos,Espumantes
+Exportacao,tipos,Suco de Uva
+Exportacao,tipos,Uvas Frescas
+Exportacao,tipos,Vinho de Mesa
+Exportacao,paises,Afeganistão
+Exportacao,paises,Africa do Sul
+Exportacao,paises,Alemanha
+Exportacao,paises,"Alemanha, República Democrática"
+Exportacao,paises,"Alemanha, República Democrática da"
+Exportacao,paises,Angola
+Exportacao,paises,Anguilla
+Exportacao,paises,Antigua e Barbuda
+Exportacao,paises,Antilhas Holandesas
+Exportacao,paises,Antígua e Barbuda
+Exportacao,paises,Arabia Saudita
+Exportacao,paises,Argentina
+Exportacao,paises,Argélia
+Exportacao,paises,Aruba
+Exportacao,paises,Arábia Saudita
+Exportacao,paises,Australia
+Exportacao,paises,Austrália
+Exportacao,paises,Bahamas
+Exportacao,paises,Bahrein
+Exportacao,paises,Bangladesh
+Exportacao,paises,Barbados
+Exportacao,paises,Barein
+Exportacao,paises,Belgica
+Exportacao,paises,Belice
+Exportacao,paises,Belize
+Exportacao,paises,Benin
+Exportacao,paises,Bermudas
+Exportacao,paises,Birmânia
+Exportacao,paises,Bolívia
+Exportacao,paises,Brasil
+Exportacao,paises,Bulgaria
+Exportacao,paises,Bulgária
+Exportacao,paises,Burquina Faso
+Exportacao,paises,Bélgica
+Exportacao,paises,Bósnia
+Exportacao,paises,Bósnia-Herzegovina
+Exportacao,paises,Cabo Verde
+Exportacao,paises,Camarões
+Exportacao,paises,Camores
+Exportacao,paises,Canada
+Exportacao,paises,Canadá
+Exportacao,paises,Catar
+Exportacao,paises,"Cayman, Ilhas"
+Exportacao,paises,Chile
+Exportacao,paises,China
+Exportacao,paises,Chipre
+Exportacao,paises,Cingapura
+Exportacao,paises,"Cocos (Keeling), Ilhas"
+Exportacao,paises,Colombia
+Exportacao,paises,Colômbia
+Exportacao,paises,Comores
+Exportacao,paises,Congo
+Exportacao,paises,"Cook, Ilhas"
+Exportacao,paises,Coreia do Norte
+Exportacao,paises,Coreia do Sul
+Exportacao,paises,"Coreia do Sul, Republica da"
+Exportacao,paises,"Coreia, Republica Sul"
+Exportacao,paises,Costa Rica
+Exportacao,paises,Costa do Marfim
+Exportacao,paises,Coveite
+Exportacao,paises,Croácia
+Exportacao,paises,Cuba
+Exportacao,paises,Curaçao
+Exportacao,paises,Dinamarca
+Exportacao,paises,Djibuti
+Exportacao,paises,Dominica
+Exportacao,paises,"Dominica, Ilha de"
+Exportacao,paises,Egito
+Exportacao,paises,El Salvador
+Exportacao,paises,Emirados Arabes Unidos
+Exportacao,paises,Emirados Árabes Unidos
+Exportacao,paises,Equador
+Exportacao,paises,"Eslovaca, Republica"
+Exportacao,paises,Eslovênia
+Exportacao,paises,Espanha
+Exportacao,paises,Estados Unidos
+Exportacao,paises,Estonia
+Exportacao,paises,Estônia
+Exportacao,paises,Falkland (Ilhas Malvinas)
+Exportacao,paises,Falkland (Malvinas)
+Exportacao,paises,"Faroé, Ilhas"
+Exportacao,paises,Filipinas
+Exportacao,paises,Filânldia
+Exportacao,paises,Finlândia
+Exportacao,paises,França
+Exportacao,paises,Gabão
+Exportacao,paises,Gana
+Exportacao,paises,Georgia
+Exportacao,paises,Gibraltar
+Exportacao,paises,Granada
+Exportacao,paises,Grécia
+Exportacao,paises,Guadalupe
+Exportacao,paises,Guatemala
+Exportacao,paises,Guiana
+Exportacao,paises,Guiana Francesa
+Exportacao,paises,Guine Bissau
+Exportacao,paises,Guine Equatorial
+Exportacao,paises,Guiné Bissau
+Exportacao,paises,Guiné Equatorial
+Exportacao,paises,Guiné-Bissau
+Exportacao,paises,Haiti
+Exportacao,paises,Honduras
+Exportacao,paises,Hong Kong
+Exportacao,paises,Hungria
+Exportacao,paises,Ilha de Man
+Exportacao,paises,Ilhas Virgens
+Exportacao,paises,India
+Exportacao,paises,Indonésia
+Exportacao,paises,Iraque
+Exportacao,paises,Irlanda
+Exportacao,paises,Irã
+Exportacao,paises,Islândia
+Exportacao,paises,Israel
+Exportacao,paises,Itália
+Exportacao,paises,Iugoslâvia
+Exportacao,paises,Jamaica
+Exportacao,paises,Japão
+Exportacao,paises,Jordânia
+Exportacao,paises,Jérsei
+Exportacao,paises,Letônia
+Exportacao,paises,Libéria
+Exportacao,paises,Lituânia
+Exportacao,paises,Luxemburgo
+Exportacao,paises,Líbano
+Exportacao,paises,Líbia
+Exportacao,paises,Macau
+Exportacao,paises,Macedônia
+Exportacao,paises,Malavi
+Exportacao,paises,Maldivas
+Exportacao,paises,Malta
+Exportacao,paises,Malásia
+Exportacao,paises,Marrocos
+Exportacao,paises,"Marshall, Ilhas"
+Exportacao,paises,Martinica
+Exportacao,paises,Mauricio
+Exportacao,paises,Mauritânia
+Exportacao,paises,Mexico
+Exportacao,paises,Mongólia
+Exportacao,paises,Montenegro
+Exportacao,paises,Moçambique
+Exportacao,paises,México
+Exportacao,paises,Mônaco
+Exportacao,paises,Namíbia
+Exportacao,paises,Nicarágua
+Exportacao,paises,Nigéria
+Exportacao,paises,Noruega
+Exportacao,paises,Nova Caledônia
+Exportacao,paises,Nova Zelândia
+Exportacao,paises,Omã
+Exportacao,paises,Outros(1)
+Exportacao,paises,Palau
+Exportacao,paises,Panamá
+Exportacao,paises,Paquistão
+Exportacao,paises,Paraguai
+Exportacao,paises,Países Baixos
+Exportacao,paises,Países Baixos (Holanda)
+Exportacao,paises,Peru
+Exportacao,paises,Pitcairn
+Exportacao,paises,Polônia
+Exportacao,paises,Porto Rico
+Exportacao,paises,Portugal
+Exportacao,paises,Provisão de Navios e Aeronaves
+Exportacao,paises,Quirguistão
+Exportacao,paises,Quênia
+Exportacao,paises,Reino Unido
+Exportacao,paises,Republica Dominicana
+Exportacao,paises,Republica Tcheca
+Exportacao,paises,República Centro Africana
+Exportacao,paises,República Dominicana
+Exportacao,paises,República Federativa da Rússia
+Exportacao,paises,Romênia
+Exportacao,paises,Rússia
+Exportacao,paises,"Rússia,  Federação da"
+Exportacao,paises,Samoa Americana
+Exportacao,paises,Senegal
+Exportacao,paises,Serra Leoa
+Exportacao,paises,Singapura
+Exportacao,paises,Sri Lanka
+Exportacao,paises,Suazilândia
+Exportacao,paises,Suriname
+Exportacao,paises,Suécia
+Exportacao,paises,Suíça
+Exportacao,paises,São Cristóvão e Névis
+Exportacao,paises,São Tomé e Príncipe
+Exportacao,paises,São Vicente e Granadinas
+Exportacao,paises,Tailândia
+Exportacao,paises,Taiwan
+Exportacao,paises,Taiwan (Formosa)
+Exportacao,paises,Tanzânia
+Exportacao,paises,"Tcheca, República"
+Exportacao,paises,Togo
+Exportacao,paises,Toquelau
+Exportacao,paises,Trindade e Tobago
+Exportacao,paises,Trinidade Tobago
+Exportacao,paises,Trinidade e Tobago
+Exportacao,paises,Tunísia
+Exportacao,paises,"Turcas e Caicos, ilhas"
+Exportacao,paises,Turquia
+Exportacao,paises,Tuvalu
+Exportacao,paises,Uruguai
+Exportacao,paises,Vanuatu
+Exportacao,paises,Venezuela
+Exportacao,paises,Vietnã
+Exportacao,paises,África do Sul
+Exportacao,paises,Áustria
+Exportacao,paises,Índia
+Importacao,tipos,Espumantes
+Importacao,tipos,Suco de Uva
+Importacao,tipos,Uvas Frescas
+Importacao,tipos,Uvas Passas
+Importacao,tipos,Vinho de Mesa
+Importacao,paises,Afeganistão
+Importacao,paises,Africa do Sul
+Importacao,paises,Alemanha
+Importacao,paises,"Alemanha, República Democrática"
+Importacao,paises,Argentina
+Importacao,paises,Argélia
+Importacao,paises,Armênia
+Importacao,paises,Arábia Saudita
+Importacao,paises,Austria
+Importacao,paises,Austrália
+Importacao,paises,Bahamas
+Importacao,paises,Bermudas
+Importacao,paises,Bolívia
+Importacao,paises,Brasil
+Importacao,paises,Bulgária
+Importacao,paises,Bélgica
+Importacao,paises,Bósnia-Herzegovina
+Importacao,paises,Canada
+Importacao,paises,Canadá
+Importacao,paises,Chile
+Importacao,paises,China
+Importacao,paises,China Continental
+Importacao,paises,Cingapura
+Importacao,paises,Colômbia
+Importacao,paises,"Coreia do Norte, República"
+Importacao,paises,"Coreia do Sul, República"
+Importacao,paises,Costa Rica
+Importacao,paises,Croácia
+Importacao,paises,Cuba
+Importacao,paises,Dinamarca
+Importacao,paises,Egito
+Importacao,paises,Emirados
+Importacao,paises,Emirados Árabes Unidos
+Importacao,paises,Eslováquia
+Importacao,paises,Eslovênia
+Importacao,paises,Espanha
+Importacao,paises,Estados Unidos
+Importacao,paises,França
+Importacao,paises,Geórgia
+Importacao,paises,"Geórgia do Sul e Sandwich do Sul, Ilhas"
+Importacao,paises,Granada
+Importacao,paises,Grécia
+Importacao,paises,Guiana
+Importacao,paises,Guiana Britânica
+Importacao,paises,Hong Kong
+Importacao,paises,Hungria
+Importacao,paises,Indonésia
+Importacao,paises,Irlanda
+Importacao,paises,Irã
+Importacao,paises,Israel
+Importacao,paises,Itália
+Importacao,paises,Iugoslávia
+Importacao,paises,Japão
+Importacao,paises,Luxemburgo
+Importacao,paises,Líbano
+Importacao,paises,Macedônia
+Importacao,paises,Marrocos
+Importacao,paises,Moldávia
+Importacao,paises,Montenegro
+Importacao,paises,México
+Importacao,paises,Noruega
+Importacao,paises,Nova Zelândia
+Importacao,paises,Não consta na tabela
+Importacao,paises,Não declarados
+Importacao,paises,Outros
+Importacao,paises,Panamá
+Importacao,paises,Paraguai
+Importacao,paises,Países Baixos
+Importacao,paises,Países Baixos (Holanda)
+Importacao,paises,Peru
+Importacao,paises,Porto Rico
+Importacao,paises,Portugal
+Importacao,paises,Reino Unido
+Importacao,paises,Republica Dominicana
+Importacao,paises,Romênia
+Importacao,paises,Rússia
+Importacao,paises,San Marino
+Importacao,paises,Suazilândia
+Importacao,paises,Suécia
+Importacao,paises,Suíça
+Importacao,paises,Sérvia
+Importacao,paises,Síria
+Importacao,paises,Taiwan
+Importacao,paises,"Tcheca, República"
+Importacao,paises,Tunísia
+Importacao,paises,Turquia
+Importacao,paises,Ucrânia
+Importacao,paises,Uruguai
+Importacao,paises,Uzbequistão
+Importacao,paises,Venezuela
+Importacao,paises,itália
+Importacao,paises,África do Sul
+Importacao,paises,Áustria
+Importacao,paises,Índia

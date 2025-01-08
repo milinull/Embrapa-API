@@ -2,6 +2,19 @@
 
 Embrapa API é uma interface desenvolvida com Django Rest Framework para facilitar o acesso ao rico banco de dados da Embrapa, que concentra informações detalhadas sobre uvas, vinhos e derivados. Esta API foi projetada para ser segura, eficiente e acessível para desenvolvedores, pesquisadores e entusiastas que desejam explorar ou integrar esses dados em seus projetos.
 
+## 📊 Dados Disponíveis
+
+A API oferece acesso a um extenso conjunto de dados relacionados a uvas, vinhos e derivados. Esses dados abrangem várias tabelas com informações sobre comércio, processamento, produção, importação e exportação de produtos vitivinícolas. Abaixo estão alguns exemplos das informações que você pode consultar:
+
+- **Comércio**: Categorias e produtos comercializados, como espumantes, vinhos e sucos de uvas.
+- **Processamento**: Tipos de uvas, como híbridas americanas e viníferas, além de outras classificações.
+- **Produção**: Dados gerais de produção, como categorias de vinhos, tipos de uvas e outras informações relacionadas à viticultura.
+- **Exportação e Importação**: Dados sobre países, tipos de produtos exportados e importados.
+
+Esses dados são estruturados e podem ser acessados por meio de filtros, permitindo consultas detalhadas para análise e integração em outros projetos. A API cobre informações de **1970 a 2023**, oferecendo uma visão histórica e detalhada do mercado vitivinícola ao longo dos anos.
+
+Para acessar todos os dados completos, você pode consultar a [tabela completa de dados disponíveis](link_para_arquivo_csv_ou_pagina_completa).
+
 ## ⚙️ Recursos Principais
 - Acesso estruturado aos dados de uvas, vinhos e derivados.
 - Suporte à autenticação via JWT (JSON Web Token).
