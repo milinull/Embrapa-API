@@ -23,6 +23,9 @@ Para acessar todos os dados completos, você pode consultar a [tabela completa d
 - Filtros específicos para categorias e anos.
 
 ## 🔄 Fluxo de Funcionamento
+
+![flowchart](flowchart.png)
+
 1. **Autenticação**: Utilize o endpoint de autenticação para obter um token JWT.
 2. **Consulta**: Acesse os dados utilizando as rotas fornecidas pela API.
 3. **Exploração e Integração**: Integre os dados retornados aos seus sistemas ou faça downloads para análises offline.
