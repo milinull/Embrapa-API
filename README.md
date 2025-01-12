@@ -75,6 +75,12 @@ Certifique-se de ter o seguinte instalado:
 
 ## ✍️ Uso da API
 
+### Credenciais de Teste
+Para facilitar o teste da API, é possível usar o seguinte usuário de teste:
+
+- **Usuário**: user_test
+- **Senha**: senha_test123
+
 ### Autenticação JWT
 1. Obtenha o token de acesso:
    - Endpoint: `POST /api/token/`
