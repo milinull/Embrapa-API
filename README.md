@@ -36,7 +36,7 @@ Para acessar todos os dados completos, você pode consultar a [tabela completa d
 
 ## 🚨 Requisitos de Instalação
 Certifique-se de ter o seguinte instalado:
-- Python 3.8+
+- Python 3.12.2+
 - Pip
 - Virtualenv (opcional, mas recomendado)
 
