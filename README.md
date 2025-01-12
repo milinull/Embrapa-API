@@ -43,7 +43,7 @@ Certifique-se de ter o seguinte instalado:
 ### Passos de Instalação
 1. Clone o repositório:
    ```bash
-   git clone https://github.com/seuusuario/embrapa-api.git
+   git clone https://github.com/milinull/Embrapa-API
    cd embrapa-api
    ```
 
