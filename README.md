@@ -118,17 +118,3 @@ Para facilitar o teste da API, é possível usar o seguinte usuário de teste:
 #### Exportações
 - `GET /exportacao/` - Retorna dados gerais de exportações.
 - `GET /exportacao/?search=<categoria>/` - Filtra dados de exportação por categoria.
-
----
-
-## **🌐 Deploy na AWS**
-
-A aplicação foi implantada em uma instância de servidor na AWS, configurada para permitir acesso público ao sistema.
-
-### **Tecnologia Utilizada**
-
-- **AWS EC2:** Utilizado para hospedar a aplicação, garantindo escalabilidade e flexibilidade.
-
-A API está disponível publicamente em: [http://56.124.107.183:8000/swagger](http://56.124.107.183:8000/swagger)
-
----
