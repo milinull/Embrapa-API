@@ -10,3 +10,30 @@ services:
       - "8000:8000"
     environment:
       DEBUG: ${DEBUG}
+
+  # Mongo
+  mongo:
+    image: mongo
+    restart: always
+    ports:
+      - 27017:27017
+    environment:
+      MONGO_INITDB_ROOT_USERNAME: ${MDB_USER}
+      MONGO_INITDB_ROOT_PASSWORD: ${MDB_PASS}
+
+  # Mongo Gui
+  mongo-express:
+    image: mongo-express
+    restart: always
+    ports:
+      - 8081:8081
+    environment:
+      ME_CONFIG_MONGODB_SERVER: mongo
+      ME_CONFIG_MONGODB_PORT: ${MDB_PORT}
+      ME_CONFIG_MONGODB_ADMINUSERNAME: ${MDB_USER}
+      ME_CONFIG_MONGODB_ADMINPASSWORD: ${MDB_PASS}
+      ME_CONFIG_BASICAUTH_ENABLED: true
+      ME_CONFIG_BASICAUTH_USERNAME: mongoexpressuser
+      ME_CONFIG_BASICAUTH_PASSWORD: mongoexpresspass
+    depends_on:
+      - mongo
