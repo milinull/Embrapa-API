@@ -1,14 +1,31 @@
-pandas>=2.3.3
-boto3>=1.40.46
-python-decouple>=3.8
-beautifulsoup4>=4.14.2
-requests>=2.32.5
-drf-yasg>=1.21.11
-
-gunicorn>=21.0.0
-whitenoise>=6.0.0
-
+# Core Web Framework
 Django>=5.2
 djangorestframework>=3.16
 django-filter>=23.0
 django-cors-headers>=4.0.0
+
+
+# Documentação e Deploy
+drf-yasg>=1.21.11
+gunicorn>=21.0.0
+whitenoise>=6.0.0
+
+
+# Banco de Dados e Armazenamento
+pymongo>=4.15.3
+boto3>=1.40.46
+
+
+# ETL e Processamento de Dados
+pandas>=2.3.3
+fastparquet>=2024.11.0
+pyspark>=4.0.1
+
+# Utilitários e Integrações
+requests>=2.32.5
+beautifulsoup4>=4.14.2
+python-decouple>=3.8
+
+# Jupyter
+ipykernel>=6.30.1
+jupyter>=1.1.1

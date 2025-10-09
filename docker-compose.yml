@@ -37,3 +37,28 @@ services:
       ME_CONFIG_BASICAUTH_PASSWORD: mongoexpresspass
     depends_on:
       - mongo
+
+  spark-master:
+    hostname: spark-master
+    container_name: spark-master
+    image: wlcamargo/spark-master
+    command: >
+      /bin/sh -c "/usr/local/spark/sbin/start-master.sh & start-notebook.sh --NotebookApp.token=''"
+    environment:
+      AWS_ACCESS_KEY: ${AWS_ACCESS_KEY}
+      AWS_SECRET_KEY: ${AWS_SECRET_KEY}
+    volumes:
+      - ./conf/util:/util
+      - ./conf/env:/env
+      - ./src/sparkanos/spark-apps:/home/user/work
+    ports:
+      - 8889:8888 # Jupyter
+      - 8083:8080 # Spark UI
+      - 4040:4040 # Spark UI Jobs
+      - 7077:7077 # Default port for communication
+    networks:
+      - sparkanos
+
+networks: 
+  sparkanos: 
+    driver: bridge 

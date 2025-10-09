@@ -1,6 +1,10 @@
 import pandas as pd
 import requests
 import boto3
+import unicodedata
+import re
+import time
+import random
 from decouple import config, Config, RepositoryEnv
 from bs4 import BeautifulSoup
 import io
@@ -15,6 +19,17 @@ s3 = boto3.client(
 )
 
 bucket_name = config('AWS_DESTINY')
+
+def sanitize_filename(filename):
+    """
+    Remove acentos, espaços e caracteres especiais de nomes de arquivo.
+    """
+    # Normaliza para remover acentos
+    nfkd_form = unicodedata.normalize('NFKD', filename)
+    only_ascii = nfkd_form.encode('ASCII', 'ignore').decode('utf-8')
+    # Substitui espaços e caracteres não alfanuméricos por underscore
+    sanitized = re.sub(r'[^0-9a-zA-Z]+', '_', only_ascii)
+    return sanitized.strip('_')
 
 # Upload de arquivo local para o S3
 def upload_arquivo(caminho_local, chave_s3):
@@ -66,7 +81,7 @@ suboptions_dict = {
 for page in range(2, 7):
     element_list = []
 
-    for ano in range(2024, 2022, -1):
+    for ano in range(2024, 1969, -1):
         base_url = f"http://vitibrasil.cnpuv.embrapa.br/index.php?ano={ano}&opcao=opt_0{page}"
 
         # Verifica se a página tem subopções
@@ -76,6 +91,9 @@ for page in range(2, 7):
                 botao_text = f"subopt_0{x}"  # texto do botão para adicionar à tabela
                 rows, table_name = scrape_table(url, ano, botao_text)
                 element_list.extend(rows)
+
+                # Pausa de 1 a 3 segundos aleatoriamente para não sobrecarregar o servidor
+                time.sleep(random.uniform(2, 4))
         else:
             rows, table_name = scrape_table(base_url, ano)
             element_list.extend(rows)
@@ -88,10 +106,11 @@ for page in range(2, 7):
     parquet_buffer.seek(0)
 
     # Enviar para o S3
+    sanitized_table_name = sanitize_filename(table_name[:-7].strip().replace(",", ""))
     s3.put_object(
         Bucket=bucket_name,
-        Key=f"embrapa-api/bronze/table_{table_name[:-7].strip().replace(",", "")}.parquet",
+        Key=f"embrapa-api/bronze/table_{sanitized_table_name}.parquet",
         Body=parquet_buffer.getvalue()
     )
 
-    print(f"Página {page} concluída. Parquet enviado para S3: bronze/table_{table_name[:-7].strip().replace(",", "")}.parquet")
+    print(f"Página {page} concluída. Parquet enviado para S3: bronze/table_{sanitized_table_name}.parquet")
