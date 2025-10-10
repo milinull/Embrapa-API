@@ -20,6 +20,8 @@ services:
     environment:
       MONGO_INITDB_ROOT_USERNAME: ${MDB_USER}
       MONGO_INITDB_ROOT_PASSWORD: ${MDB_PASS}
+    networks:
+      - app-net
 
   # Mongo Gui
   mongo-express:
@@ -37,6 +39,8 @@ services:
       ME_CONFIG_BASICAUTH_PASSWORD: mongoexpresspass
     depends_on:
       - mongo
+    networks:
+      - app-net
 
   spark-master:
     hostname: spark-master
@@ -48,14 +52,23 @@ services:
       AWS_ACCESS_KEY: ${AWS_ACCESS_KEY}
       AWS_SECRET_KEY: ${AWS_SECRET_KEY}
       AWS_DESTINY_KEY: ${AWS_DESTINY}
+      MDB_HOST: ${MDB_HOST}
+      MDB_PORT: ${MDB_PORT}
+      MDB_USER: ${MDB_USER}
+      MDB_PASS: ${MDB_PASS}
+      MDB_NAME: ${MDB_NAME}
+      PYTHONPATH: /home/user/project:/home/user/project/src:/home/user/project/src/spark
+    env_file:
+      - .env   
     volumes:
       - ./conf/util:/util
       - ./conf/env:/env
+      - ./:/home/user/project
       - ./src/spark/spark-apps:/home/user/work
     ports:
       - 8889:8888 # Jupyter
       - 8083:8080 # Spark UI
-      - 4040:4040 # Spark UI Jobs
+      - 8040:4040 # Spark UI Jobs
       - 7077:7077 # Default port for communication
     networks:
       - app-net
