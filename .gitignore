@@ -1,6 +1,6 @@
-# -----------------------------
 # Arquivos de ambiente
 .env
+.env.local
 *.env
 
 # Python / Django
@@ -16,9 +16,8 @@ __pycache__/
 *.swo
 
 # Django migrations
-*/migrations/*.pyc
-*/migrations/*.pyo
-*/migrations/__pycache__/
+*/migrations/*.py
+!*/migrations/__init__.py
 
 # Virtualenv / dependências
 env/
@@ -40,10 +39,17 @@ dump/
 *.bson
 *.metadata.json
 
+# Modelos e dados (ML/AI)
+*.pkl
+*.pickle
+*.h5
+*.pth
+*.onnx
+models/
+datasets/
+
 # Docker
-Dockerfile
 docker-compose.override.yml
-*.log
 
 # IDEs e editores
 .vscode/
@@ -51,6 +57,8 @@ docker-compose.override.yml
 *.iml
 *.sublime-project
 *.sublime-workspace
+*.swp
+*.swo
 
 # Sistema operacional
 .DS_Store
@@ -61,10 +69,22 @@ desktop.ini
 *.key
 *.pem
 *.crt
+secrets.json
 
 # Jupyter
 .ipynb_checkpoints/
+*.ipynb_checkpoints
+
+# Testes
+.pytest_cache/
+.coverage
+htmlcov/
+.tox/
+
+# Celery (se usar)
+celerybeat-schedule
 
 # Outros temporários
 *.tmp
 *.temp
+.cache/
