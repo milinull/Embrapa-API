@@ -1,8 +1,7 @@
-
+# -----------------------------
 # Arquivos de ambiente
-*.env
 .env
-
+*.env
 
 # Python / Django
 __pycache__/
@@ -13,7 +12,6 @@ __pycache__/
 *.log
 *.pot
 *.mo
-*.py[cod]
 *.swp
 *.swo
 
@@ -21,8 +19,6 @@ __pycache__/
 */migrations/*.pyc
 */migrations/*.pyo
 */migrations/__pycache__/
-*/migrations/*.py
-
 
 # Virtualenv / dependências
 env/
@@ -33,23 +29,21 @@ ENV/
 dist/
 build/
 
-
-# Spark
+# Dados grandes
 *.parquet
 *.csv
 *.json
 *.avro
 *.orc
 *.snappy
-*.log
-
-
-# MongoDB
 dump/
 *.bson
-*.json  # se forem dumps grandes
 *.metadata.json
 
+# Docker
+Dockerfile
+docker-compose.override.yml
+*.log
 
 # IDEs e editores
 .vscode/
@@ -58,18 +52,18 @@ dump/
 *.sublime-project
 *.sublime-workspace
 
-
 # Sistema operacional
 .DS_Store
 Thumbs.db
 desktop.ini
-
 
 # Certificados e chaves
 *.key
 *.pem
 *.crt
 
+# Jupyter
+.ipynb_checkpoints/
 
 # Outros temporários
 *.tmp
