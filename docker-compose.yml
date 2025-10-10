@@ -47,18 +47,19 @@ services:
     environment:
       AWS_ACCESS_KEY: ${AWS_ACCESS_KEY}
       AWS_SECRET_KEY: ${AWS_SECRET_KEY}
+      AWS_DESTINY_KEY: ${AWS_DESTINY}
     volumes:
       - ./conf/util:/util
       - ./conf/env:/env
-      - ./src/sparkanos/spark-apps:/home/user/work
+      - ./src/spark/spark-apps:/home/user/work
     ports:
       - 8889:8888 # Jupyter
       - 8083:8080 # Spark UI
       - 4040:4040 # Spark UI Jobs
       - 7077:7077 # Default port for communication
     networks:
-      - sparkanos
+      - app-net
 
 networks: 
-  sparkanos: 
+  app-net: 
     driver: bridge 
