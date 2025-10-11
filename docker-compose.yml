@@ -10,6 +10,15 @@ services:
       - "8000:8000"
     environment:
       DEBUG: ${DEBUG}
+      MDB_HOST: ${MDB_HOST}
+      MDB_PORT: ${MDB_PORT}
+      MDB_USER: ${MDB_USER}
+      MDB_PASS: ${MDB_PASS}
+      MDB_NAME: ${MDB_NAME}
+    networks:
+      - app-net
+    depends_on:
+      - mongo
 
   # Mongo
   mongo:
@@ -75,4 +84,4 @@ services:
 
 networks: 
   app-net: 
-    driver: bridge 
+    driver: bridge
