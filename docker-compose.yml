@@ -29,6 +29,8 @@ services:
     environment:
       MONGO_INITDB_ROOT_USERNAME: ${MDB_USER}
       MONGO_INITDB_ROOT_PASSWORD: ${MDB_PASS}
+    volumes:
+      - mongo_data:/data/db
     networks:
       - app-net
 
@@ -85,3 +87,6 @@ services:
 networks: 
   app-net: 
     driver: bridge
+
+volumes:
+  mongo_data:
