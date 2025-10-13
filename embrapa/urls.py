@@ -11,4 +11,5 @@ router.register(r'Processamento', ProcessVinhosViewSet)
 
 urlpatterns = [
     path('', include(router.urls)),
+    path('comparativo/<int:ano>/', comparativo_producao_exportacao),
 ]
