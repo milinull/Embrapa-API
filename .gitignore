@@ -82,3 +82,6 @@ desktop.ini
 *.tmp
 *.temp
 .cache/
+
+# keys
+*.key
