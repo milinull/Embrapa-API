@@ -25,11 +25,38 @@ A aplicação é composta por 4 principais camadas:
 
 ```mermaid
 graph TD
-    A[S3 (Bronze/Silver)] -->|Spark ETL| B[MongoDB]
-    B -->|MongoEngine| C[Django API]
-    C -->|REST Endpoints| D[React Dashboard]
-    D -->|Axios/Fetch| C
-    E[Mongo Express] --> B
+    subgraph Cloud["☁️ AWS S3"]
+        A1[Bronze Layer]
+        A2[Silver Layer]
+    end
+
+    subgraph Spark["⚙️ Apache Spark (ETL)"]
+        B1[Scraping]
+        B2[Transformações]
+        B3[Envio ao MongoDB]
+    end
+
+    subgraph Backend["🧩 Django API"]
+        C1[Django REST + MongoEngine]
+    end
+
+    subgraph Frontend["💻 React Dashboard"]
+        D1[Recharts + Lucide UI]
+    end
+
+    subgraph DB["🍃 MongoDB"]
+        E1[Collections]
+        E2[Mongo Express GUI]
+    end
+
+    A1 -->|Leitura & Limpeza| B1
+    B2 -->|Grava Silver| A2
+    A2 -->|Carregamento| B3
+    B3 -->|Insert Many| E1
+    E1 -->|Query| C1
+    C1 -->|API REST| D1
+    D1 -->|Fetch/Axios| C1
+    E2 -. visualiza .-> E1
 ```
 
 ---
