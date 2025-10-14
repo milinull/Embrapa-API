@@ -1,45 +1,42 @@
-# Arquivos de ambiente
+# arquivos de ambiente
 .env
-.env.local
 *.env
+.env.local
+.env.*.local
 
-# Python / Django
+# python / django
 __pycache__/
-*.pyc
-*.pyo
-*.pyd
+*.py[cod]
 *.sqlite3
 *.log
 *.pot
 *.mo
-*.swp
-*.swo
 
-# Django migrations
+# migrations
 *embrapa/migrations/*.py
 !*embrapa/migrations/__init__.py
 
-# Virtualenv / dependências
+# virtualenv
 env/
 venv/
-ENV/
 .venv/
+ENV/
 *.egg-info/
 dist/
 build/
 
-# Dados grandes
+# dados grandes
 *.parquet
 *.csv
 *.json
 *.avro
 *.orc
 *.snappy
-dump/
 *.bson
 *.metadata.json
+dump/
 
-# Modelos e dados (ML/AI)
+# modelos e datasets
 *.pkl
 *.pickle
 *.h5
@@ -48,43 +45,40 @@ dump/
 models/
 datasets/
 
-# Docker
+# docker
 docker-compose.override.yml
 
-# IDEs e editores
+# frontend (react)
+node_modules/
+build/
+dist/
+.cache/
+/.pnp
+.pnp.js
+
+# testes e coverage
+coverage/
+jest-html-reporters-*.html
+
+# logs
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# editores e IDEs
 .vscode/
 .idea/
 *.iml
 *.sublime-project
 *.sublime-workspace
-*.swp
-*.swo
 
-# Sistema operacional
+# sistema operacional
 .DS_Store
 Thumbs.db
 desktop.ini
 
-# Certificados e chaves
-*.key
-*.pem
-*.crt
-secrets.json
-
-# Jupyter
-.ipynb_checkpoints/
-*.ipynb_checkpoints
-
-# Testes
-.pytest_cache/
-.coverage
-htmlcov/
-.tox/
-
-# Celery (se usar)
-celerybeat-schedule
-
-# Outros temporários
+# temporários
+*.bak
 *.tmp
 *.temp
 .cache/
