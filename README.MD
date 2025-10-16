@@ -10,11 +10,11 @@
 ![Docker](https://img.shields.io/badge/Container-Docker-blue)
 ![AWS S3](https://img.shields.io/badge/Storage-AWS_S3-FF9900)
 ![Django CI](https://github.com/milinull/Embrapa-API/workflows/Django%20CI%2FCD/badge.svg)
-![Coverage](https://codecov.io/gh/milinull/Embrapa-API/branch/main/graph/badge.svg)
+![Coverage](https://img.shields.io/badge/coverage-96%25-brightgreen)
 
 **Plataforma completa de análise de dados da indústria vinícola brasileira**
 
-[Visão Geral](#-visão-geral) • [Arquitetura](#️-arquitetura) • [Instalação](#-instalação-rápida) • [Documentação](#-documentação-da-api) • [Tecnologias](#-stack-tecnológico)
+[Visão Geral](#-visão-geral) • [Arquitetura](#️-arquitetura) • [Instalação](#-instalação-rápida) • [Testes](#-testes-e-qualidade) • [CI/CD](#-cicd-e-automação) • [Documentação](#-documentação-da-api) • [Tecnologias](#-stack-tecnológico)
 
 </div>
 
@@ -32,6 +32,8 @@ Pipeline end-to-end de engenharia de dados que coleta, processa e visualiza info
 - 🐳 **Infraestrutura containerizada** com Docker Compose
 - ☁️ **Integração com AWS S3** para data lake
 - 📈 **Análises comparativas** de produção vs exportação
+- ✅ **96% de cobertura** de testes automatizados
+- 🔄 **CI/CD automatizado** com GitHub Actions
 
 ---
 
@@ -100,8 +102,8 @@ graph TD
 ### 1. Clone o repositório
 
 ```bash
-git clone https://github.com/seu-usuario/embrapa-wine-data.git
-cd embrapa-wine-data
+git clone https://github.com/milinull/Embrapa-API.git
+cd Embrapa-API
 ```
 
 ### 2. Configure as variáveis de ambiente
@@ -145,6 +147,166 @@ Aguarde alguns minutos enquanto os containers são construídos e inicializados.
 | **Swagger UI** | http://localhost:8000/swagger | JWT |
 | **ReDoc** | http://localhost:8000/redoc | - |
 
+---
+
+## 🧪 Testes e Qualidade
+
+O projeto possui **32 testes unitários automatizados** cobrindo **96% do código** da API.
+
+### 📊 Cobertura de Testes
+
+| Módulo | Cobertura | Status |
+|--------|-----------|--------|
+| **Views** | 98% | ✅ |
+| **Serializers** | 100% | ✅ |
+| **URLs** | 100% | ✅ |
+| **Models** | 89% | ✅ |
+| **Total** | **96%** | ✅ |
+
+### Executar Testes
+
+#### Rodar todos os testes
+
+```bash
+# Via Docker
+docker compose exec web python manage.py test embrapa
+
+# Localmente
+python manage.py test embrapa
+```
+
+#### Executar com relatório de cobertura
+
+```bash
+# Via Docker
+docker compose exec web coverage run --source='.' manage.py test embrapa
+docker compose exec web coverage report
+
+# Localmente
+coverage run --source='.' manage.py test embrapa
+coverage report
+```
+
+#### Visualizar cobertura detalhada (HTML)
+
+```bash
+coverage html
+# Abra htmlcov/index.html no navegador
+```
+
+### 🎯 O que é testado?
+
+✅ **Listagem de endpoints** - Verifica se todos os endpoints retornam dados corretamente  
+✅ **Filtros e query params** - Testa filtros por ano, categoria, produto, país, tipo e cultivar  
+✅ **Actions customizadas** - `total_por_ano`, `top_paises`  
+✅ **Comparativo produção x exportação** - Validação de cálculos e percentuais  
+✅ **Ordenação de resultados** - Verifica ordenação por ano decrescente  
+✅ **Paginação** - Navegação entre páginas de resultados  
+✅ **Tratamento de erros** - Casos de dados inválidos ou inexistentes  
+
+### Exemplo de Saída
+
+```bash
+Found 32 test(s).
+Creating test database for alias 'default'...
+System check identified no issues (0 silenced).
+................................
+----------------------------------------------------------------------
+Ran 32 tests in 0.337s
+OK
+Destroying test database for alias 'default'...
+
+Name                     Stmts   Miss  Cover
+--------------------------------------------
+embrapa/views.py           111      2    98%
+embrapa/serializers.py      22      0   100%
+embrapa/models.py           44      5    89%
+embrapa/urls.py             10      0   100%
+--------------------------------------------
+TOTAL                      501     21    96%
+```
+
+---
+
+## 🔄 CI/CD e Automação
+
+O projeto utiliza **GitHub Actions** para integração e entrega contínuas, garantindo qualidade do código a cada push.
+
+### 🚀 Pipeline Automatizado
+
+```mermaid
+graph LR
+    A[💻 Git Push] --> B[🔍 GitHub Actions]
+    B --> C[🧪 Testes Unitários]
+    B --> D[📝 Code Linting]
+    C --> E{✅ Passou?}
+    D --> E
+    E -->|Sim| F[✨ Deploy Ready]
+    E -->|Não| G[❌ Bloqueado]
+```
+
+### Workflow de CI/CD
+
+A cada **push** ou **pull request** nas branches `main` ou `develop`, o GitHub Actions executa automaticamente:
+
+#### 1️⃣ **Job: Test**
+- ✅ Configura ambiente Python 3.12
+- ✅ Sobe container MongoDB para testes
+- ✅ Instala dependências
+- ✅ Executa 32 testes unitários
+- ✅ Gera relatório de cobertura (96%)
+- ✅ Valida que nenhum teste falhou
+
+#### 2️⃣ **Job: Lint**
+- ✅ Executa **Flake8** para verificar erros de sintaxe
+- ✅ Executa **Black** para validar formatação do código
+- ✅ Garante padrão de código consistente
+
+<p>
+
+
+Você pode ver o status de todos os workflows em: [Actions](https://github.com/milinull/Embrapa-API/actions)
+
+### Arquivo de Configuração
+
+O pipeline está definido em `.github/workflows/django-tests.yml`:
+
+```yaml
+name: Django CI/CD
+
+on:
+  push:
+    branches: [ main, develop ]
+  pull_request:
+    branches: [ main, develop ]
+
+jobs:
+  test:
+    runs-on: ubuntu-latest
+    services:
+      mongodb:
+        image: mongo:latest
+        ports:
+          - 27017:27017
+    steps:
+      - uses: actions/checkout@v3
+      - name: Set up Python
+        uses: actions/setup-python@v4
+        with:
+          python-version: '3.12'
+      - name: Run tests with coverage
+        run: |
+          coverage run --source='.' manage.py test embrapa
+          coverage report
+
+  lint:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Run flake8
+        run: flake8 .
+      - name: Check formatting with black
+        run: black --check .
+```
 ---
 
 ## 🔐 Autenticação JWT
@@ -212,10 +374,6 @@ O dashboard React oferece análises visuais completas com:
 - **📱 Responsivo**: Interface adaptável para mobile e desktop
 
 Acesse em: http://localhost:3000
-
-### Capturas de Tela
-
-
 
 ---
 
@@ -336,9 +494,13 @@ Análise comparativa entre produção e exportação.
 - **Recharts** - Biblioteca de gráficos
 - **Lucide React** - Ícones
 
-### Infraestrutura
+### Infraestrutura & DevOps
 - **Docker & Docker Compose** - Containerização
 - **AWS S3** - Object storage (Data Lake)
+- **GitHub Actions** - CI/CD
+- **Coverage.py** - Análise de cobertura de testes
+- **Black** - Formatação de código
+- **Flake8** - Linting
 
 ---
 
@@ -346,10 +508,14 @@ Análise comparativa entre produção e exportação.
 
 ```
 embrapa-wine-data/
+├── 📂 .github/
+│   └── workflows/
+│       └── django-tests.yml       # Pipeline CI/CD
 ├── 📂 embrapa/                    # App Django principal
 │   ├── models.py                  # Models MongoEngine
 │   ├── views.py                   # ViewSets da API
 │   ├── serializers.py             # Serializadores DRF
+│   ├── tests.py                   # 32 testes unitários
 │   └── urls.py                    # Rotas da API
 ├── 📂 mongo/                      # Configuração MongoDB
 │   ├── connection.py              # Setup de conexão
@@ -408,15 +574,17 @@ docker compose logs spark-master | grep token
 # Acesse http://localhost:8889 e insira o token
 ```
 
-### Executar testes
+### Formatação de Código
 
 ```bash
-# Backend
-python manage.py test
+# Formatar código automaticamente
+black .
 
-# Frontend
-cd wine-frontend
-npm test
+# Verificar formatação sem modificar
+black --check .
+
+# Executar linting
+flake8 .
 ```
 
 ---
@@ -425,11 +593,13 @@ npm test
 
 - [x] ~~Implementar autenticação JWT na API~~
 - [x] ~~Adicionar documentação Swagger/ReDoc~~
-- [ ] Adicionar cache com Redis
-- [x] ~~Criar testes automatizados (>80% cobertura)~~
+- [x] ~~Criar testes automatizados (96% cobertura)~~
 - [x] ~~Pipeline CI/CD com GitHub Actions~~
+- [x] ~~Implementar linting e formatação automática~~
+- [ ] Adicionar cache com Redis
 - [ ] Adicionar forecasting com ML
 - [ ] Implementar notificações em tempo real
 - [ ] Dashboard de monitoramento (Grafana)
+- [ ] Deploy automatizado em produção
 
 ---
