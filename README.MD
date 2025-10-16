@@ -9,6 +9,8 @@
 ![React](https://img.shields.io/badge/Frontend-React-61DAFB)
 ![Docker](https://img.shields.io/badge/Container-Docker-blue)
 ![AWS S3](https://img.shields.io/badge/Storage-AWS_S3-FF9900)
+![Django CI](https://github.com/milinull/Embrapa-API/workflows/Django%20CI%2FCD/badge.svg)
+![Coverage](https://codecov.io/gh/milinull/Embrapa-API/branch/main/graph/badge.svg)
 
 **Plataforma completa de análise de dados da indústria vinícola brasileira**
 
@@ -425,7 +427,7 @@ npm test
 - [x] ~~Adicionar documentação Swagger/ReDoc~~
 - [ ] Adicionar cache com Redis
 - [x] ~~Criar testes automatizados (>80% cobertura)~~
-- [ ] Pipeline CI/CD com GitHub Actions
+- [x] ~~Pipeline CI/CD com GitHub Actions~~
 - [ ] Adicionar forecasting com ML
 - [ ] Implementar notificações em tempo real
 - [ ] Dashboard de monitoramento (Grafana)
