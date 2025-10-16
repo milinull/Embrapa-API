@@ -59,6 +59,8 @@ dist/
 # testes e coverage
 coverage/
 jest-html-reporters-*.html
+*.coverage
+htmlcov/
 
 # logs
 npm-debug.log*

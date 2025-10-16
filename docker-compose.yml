@@ -20,6 +20,23 @@ services:
     depends_on:
       - mongo
 
+  # Frontend React
+  frontend:
+    build: ./wine-frontend
+    container_name: wine-frontend
+    ports:
+      - "3000:3000"
+    volumes:
+      - ./wine-frontend:/app
+      - /app/node_modules
+    environment:
+      - REACT_APP_API_URL=http://localhost:8000
+      - CHOKIDAR_USEPOLLING=true  # Para hot reload funcionar no Docker
+    depends_on:
+      - web
+    networks:
+      - app-net
+
   # Mongo
   mongo:
     image: mongo

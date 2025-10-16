@@ -155,7 +155,7 @@ class ProcessVinhosViewSet(viewsets.ModelViewSet):
 
 # COMPARATIVO ENTRE PRODUÇÃO E EXPORTAÇÃO
 @api_view(['GET'])
-@permission_classes([IsAuthenticated])
+# @permission_classes([IsAuthenticated])
 def comparativo_producao_exportacao(request, ano):
     try:
         ano = int(ano)

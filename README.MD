@@ -109,7 +109,6 @@ Crie um arquivo `.env` na raiz do projeto:
 ```bash
 # Django Settings
 DEBUG=True
-SECRET_KEY=your-secret-key-here
 
 # MongoDB Configuration
 MDB_HOST=mongo
@@ -122,7 +121,6 @@ MDB_NAME=embrapa_wine
 AWS_ACCESS_KEY=your-access-key
 AWS_SECRET_KEY=your-secret-key
 AWS_DESTINY=your-bucket-name
-AWS_DESTINY_KEY=your-bucket-name
 AWS_LOCAL=us-east-1
 ```
 
@@ -138,10 +136,64 @@ Aguarde alguns minutos enquanto os containers são construídos e inicializados.
 
 | Aplicação | URL | Credenciais |
 |-----------|-----|-------------|
-| Dashboard | http://localhost:3000 | - |
-| API Django | http://localhost:8000/api | - |
-| Mongo Express | http://localhost:8081 | admin / admin123 |
-| Jupyter Notebook | http://localhost:8889 | Token exibido no log |
+| **Dashboard** | http://localhost:3000 | - |
+| **API Django**| http://localhost:8000/api | - |
+| **Mongo Express** | http://localhost:8081 | admin / admin123 |
+| **Jupyter Notebook** | http://localhost:8889 | Token exibido no log |
+| **Swagger UI** | http://localhost:8000/swagger | JWT |
+| **ReDoc** | http://localhost:8000/redoc | - |
+
+---
+
+## 🔐 Autenticação JWT
+
+A API utiliza **JSON Web Tokens (JWT)** para autenticação segura.
+
+### Obtendo Token de Acesso
+
+```bash
+# Requisição
+POST http://localhost:8000/api/token/
+Content-Type: application/json
+
+{
+  "username": "seu_usuario",
+  "password": "sua_senha"
+}
+
+# Resposta
+{
+  "access": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9...",
+  "refresh": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9..."
+}
+```
+
+### Usando o Token
+
+```bash
+# Adicione o token no header Authorization
+GET http://localhost:8000/api/Producao/?ano=2024
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9...
+```
+
+### Renovando o Token
+
+```bash
+POST http://localhost:8000/api/token/refresh/
+Content-Type: application/json
+
+{
+  "refresh": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9..."
+}
+```
+
+### Testando no Swagger
+
+1. Acesse http://localhost:8000/swagger/
+2. Clique no botão **"Authorize"** 🔓
+3. Digite: `Bearer seu_token_aqui`
+4. Clique em **"Authorize"** e depois **"Close"**
+5. Agora você pode testar os endpoints autenticados!
 
 ---
 
@@ -156,6 +208,8 @@ O dashboard React oferece análises visuais completas com:
 - **📑 Sistema de abas**: Comercialização, Produção, Exportação, Importação e Processamento
 - **💹 Comparativos**: Análise de produção vs exportação
 - **📱 Responsivo**: Interface adaptável para mobile e desktop
+
+Acesse em: http://localhost:3000
 
 ### Capturas de Tela
 
@@ -279,7 +333,6 @@ Análise comparativa entre produção e exportação.
 - **React** - Biblioteca UI
 - **Recharts** - Biblioteca de gráficos
 - **Lucide React** - Ícones
-- **Axios** - Cliente HTTP
 
 ### Infraestrutura
 - **Docker & Docker Compose** - Containerização
@@ -363,5 +416,18 @@ python manage.py test
 cd wine-frontend
 npm test
 ```
+
+---
+
+## 📈 Roadmap
+
+- [x] ~~Implementar autenticação JWT na API~~
+- [x] ~~Adicionar documentação Swagger/ReDoc~~
+- [ ] Adicionar cache com Redis
+- [x] ~~Criar testes automatizados (>80% cobertura)~~
+- [ ] Pipeline CI/CD com GitHub Actions
+- [ ] Adicionar forecasting com ML
+- [ ] Implementar notificações em tempo real
+- [ ] Dashboard de monitoramento (Grafana)
 
 ---
