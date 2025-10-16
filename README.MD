@@ -190,7 +190,7 @@ coverage report
 #### Visualizar cobertura detalhada (HTML)
 
 ```bash
-coverage html
+docker compose exec web coverage html
 # Abra htmlcov/index.html no navegador
 ```
 
@@ -563,15 +563,6 @@ python manage.py runserver
 cd wine-frontend
 npm install
 npm start
-```
-
-### Acessar Jupyter Notebooks
-
-```bash
-# O token está nos logs do container
-docker compose logs spark-master | grep token
-
-# Acesse http://localhost:8889 e insira o token
 ```
 
 ### Formatação de Código
