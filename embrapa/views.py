@@ -5,12 +5,13 @@ from rest_framework import status
 from rest_framework.permissions import IsAuthenticated
 from rest_framework_simplejwt.authentication import JWTAuthentication
 
-from .models import (
-    ComercVinhos, ExportVinhos, ImportVinhos, ProdVinhos, ProcessVinhos
-)
+from .models import ComercVinhos, ExportVinhos, ImportVinhos, ProdVinhos, ProcessVinhos
 from .serializers import (
-    ComercVinhosSerializer, ExportVinhosSerializer,
-    ImportVinhosSerializer, ProdVinhosSerializer, ProcessVinhosSerializer
+    ComercVinhosSerializer,
+    ExportVinhosSerializer,
+    ImportVinhosSerializer,
+    ProdVinhosSerializer,
+    ProcessVinhosSerializer,
 )
 
 
@@ -18,8 +19,8 @@ from .serializers import (
 class ComercVinhosViewSet(viewsets.ModelViewSet):
     queryset = ComercVinhos.objects().order_by("-Ano", "Categoria", "Produto")
     serializer_class = ComercVinhosSerializer
-    #authentication_classes = [JWTAuthentication]
-    #permission_classes = [IsAuthenticated]
+    # authentication_classes = [JWTAuthentication]
+    # permission_classes = [IsAuthenticated]
 
     def get_queryset(self):
         queryset = ComercVinhos.objects().order_by("-Ano", "Categoria", "Produto")
@@ -35,11 +36,11 @@ class ComercVinhosViewSet(viewsets.ModelViewSet):
             queryset = queryset.filter(Produto__icontains=produto)
         return queryset
 
-    @action(detail=False, methods=['get'])
+    @action(detail=False, methods=["get"])
     def total_por_ano(self, request):
         pipeline = [
             {"$group": {"_id": "$Ano", "total_litros": {"$sum": "$Quantidade_L"}}},
-            {"$sort": {"_id": 1}}
+            {"$sort": {"_id": 1}},
         ]
         dados = list(ComercVinhos.objects.aggregate(*pipeline))
         return Response(dados)
@@ -49,8 +50,8 @@ class ComercVinhosViewSet(viewsets.ModelViewSet):
 class ExportVinhosViewSet(viewsets.ModelViewSet):
     queryset = ExportVinhos.objects().order_by("-Ano", "Tipo")
     serializer_class = ExportVinhosSerializer
-    #authentication_classes = [JWTAuthentication]
-    #permission_classes = [IsAuthenticated]
+    # authentication_classes = [JWTAuthentication]
+    # permission_classes = [IsAuthenticated]
 
     def get_queryset(self):
         queryset = ExportVinhos.objects().order_by("-Ano", "Tipo")
@@ -66,13 +67,13 @@ class ExportVinhosViewSet(viewsets.ModelViewSet):
             queryset = queryset.filter(Tipo__icontains=tipo)
         return queryset
 
-    @action(detail=False, methods=['get'])
+    @action(detail=False, methods=["get"])
     def top_paises(self, request):
         limit = int(request.query_params.get("limit", 5))
         pipeline = [
             {"$group": {"_id": "$Países", "total_kg": {"$sum": "$Quantidade_Kg"}}},
             {"$sort": {"total_kg": -1}},
-            {"$limit": limit}
+            {"$limit": limit},
         ]
         dados = list(ExportVinhos.objects.aggregate(*pipeline))
         return Response(dados)
@@ -82,8 +83,8 @@ class ExportVinhosViewSet(viewsets.ModelViewSet):
 class ImportVinhosViewSet(viewsets.ModelViewSet):
     queryset = ImportVinhos.objects().order_by("-Ano", "Tipo")
     serializer_class = ImportVinhosSerializer
-    #authentication_classes = [JWTAuthentication]
-    #permission_classes = [IsAuthenticated]
+    # authentication_classes = [JWTAuthentication]
+    # permission_classes = [IsAuthenticated]
 
     def get_queryset(self):
         queryset = ImportVinhos.objects().order_by("-Ano", "Tipo")
@@ -104,8 +105,8 @@ class ImportVinhosViewSet(viewsets.ModelViewSet):
 class ProdVinhosViewSet(viewsets.ModelViewSet):
     queryset = ProdVinhos.objects().order_by("-Ano", "Categoria", "Produto")
     serializer_class = ProdVinhosSerializer
-    #authentication_classes = [JWTAuthentication]
-    #permission_classes = [IsAuthenticated]
+    # authentication_classes = [JWTAuthentication]
+    # permission_classes = [IsAuthenticated]
 
     def get_queryset(self):
         queryset = ProdVinhos.objects().order_by("-Ano", "Categoria", "Produto")
@@ -121,11 +122,11 @@ class ProdVinhosViewSet(viewsets.ModelViewSet):
             queryset = queryset.filter(Produto__icontains=produto)
         return queryset
 
-    @action(detail=False, methods=['get'])
+    @action(detail=False, methods=["get"])
     def total_por_ano(self, request):
         pipeline = [
             {"$group": {"_id": "$Ano", "total_litros": {"$sum": "$Quantidade_L"}}},
-            {"$sort": {"_id": 1}}
+            {"$sort": {"_id": 1}},
         ]
         dados = list(ProdVinhos.objects.aggregate(*pipeline))
         return Response(dados)
@@ -135,8 +136,8 @@ class ProdVinhosViewSet(viewsets.ModelViewSet):
 class ProcessVinhosViewSet(viewsets.ModelViewSet):
     queryset = ProcessVinhos.objects().order_by("-Ano", "Tipo", "Cultivar")
     serializer_class = ProcessVinhosSerializer
-    #authentication_classes = [JWTAuthentication]
-    #permission_classes = [IsAuthenticated]
+    # authentication_classes = [JWTAuthentication]
+    # permission_classes = [IsAuthenticated]
 
     def get_queryset(self):
         queryset = ProcessVinhos.objects().order_by("-Ano", "Tipo", "Cultivar")
@@ -154,7 +155,7 @@ class ProcessVinhosViewSet(viewsets.ModelViewSet):
 
 
 # COMPARATIVO ENTRE PRODUÇÃO E EXPORTAÇÃO
-@api_view(['GET'])
+@api_view(["GET"])
 # @permission_classes([IsAuthenticated])
 def comparativo_producao_exportacao(request, ano):
     try:
@@ -166,12 +167,16 @@ def comparativo_producao_exportacao(request, ano):
     export_total = ExportVinhos.objects(Ano=ano).sum("Quantidade_Kg") or 0
 
     if prod_total == 0:
-        return Response({"erro": f"Sem dados de produção para o ano {ano}."}, status=404)
+        return Response(
+            {"erro": f"Sem dados de produção para o ano {ano}."}, status=404
+        )
 
     percentual = (export_total / prod_total * 100) if prod_total else 0
-    return Response({
-        "ano": ano,
-        "producao_total_L": prod_total,
-        "exportacao_total_Kg": export_total,
-        "percentual_exportado": round(percentual, 2)
-    })
+    return Response(
+        {
+            "ano": ano,
+            "producao_total_L": prod_total,
+            "exportacao_total_Kg": export_total,
+            "percentual_exportado": round(percentual, 2),
+        }
+    )

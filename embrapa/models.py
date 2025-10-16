@@ -1,5 +1,6 @@
 from mongoengine import Document, IntField, StringField, FloatField
 
+
 # Comércio de Vinhos
 class ComercVinhos(Document):
     Ano = IntField(required=True)
@@ -7,9 +8,7 @@ class ComercVinhos(Document):
     Quantidade_L = FloatField()
     Categoria = StringField(max_length=100)
 
-    meta = {
-        'collection': 'comercializacao_vinhos'
-    }
+    meta = {"collection": "comercializacao_vinhos"}
 
     def __str__(self):
         return f"{self.ano} ({self.produto})"
@@ -23,9 +22,7 @@ class ExportVinhos(Document):
     Quantidade_Kg = FloatField()
     Valor_US = FloatField()
 
-    meta = {
-        'collection': 'exportacao_vinhos'
-    }
+    meta = {"collection": "exportacao_vinhos"}
 
     def __str__(self):
         return f"{self.ano} ({self.paises})"
@@ -39,9 +36,7 @@ class ImportVinhos(Document):
     Quantidade_Kg = FloatField()
     Valor_US = FloatField()
 
-    meta = {
-        'collection': 'importacao_vinhos'
-    }
+    meta = {"collection": "importacao_vinhos"}
 
     def __str__(self):
         return f"{self.ano} ({self.paises})"
@@ -54,9 +49,7 @@ class ProdVinhos(Document):
     Quantidade_L = FloatField()
     Categoria = StringField(max_length=100)
 
-    meta = {
-        'collection': 'producao_vinhos'
-    }
+    meta = {"collection": "producao_vinhos"}
 
     def __str__(self):
         return f"{self.ano} ({self.produto})"
@@ -70,9 +63,7 @@ class ProcessVinhos(Document):
     Quantidade_Kg = FloatField()
     Categoria = StringField(max_length=100)
 
-    meta = {
-        'collection': 'uvas_processadas'
-    }
+    meta = {"collection": "uvas_processadas"}
 
     def __str__(self):
         return f"{self.ano} ({self.cultivar})"

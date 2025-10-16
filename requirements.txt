@@ -24,11 +24,14 @@ pandas>=2.3.3
 fastparquet>=2024.11.0
 pyspark>=4.0.1
 
+
 # Utilitários e Integrações
 requests>=2.32.5
 beautifulsoup4>=4.14.2
 python-decouple>=3.8
 dnspython>=2.8.0
+black>=25.9.0
+
 
 # Jupyter
 ipykernel>=6.30.1
