@@ -1,7 +1,10 @@
 from rest_framework_mongoengine import viewsets
-from rest_framework.decorators import action, api_view
+from rest_framework.decorators import action, api_view, permission_classes
 from rest_framework.response import Response
 from rest_framework import status
+from rest_framework.permissions import IsAuthenticated
+from rest_framework_simplejwt.authentication import JWTAuthentication
+
 from .models import (
     ComercVinhos, ExportVinhos, ImportVinhos, ProdVinhos, ProcessVinhos
 )
@@ -15,8 +18,9 @@ from .serializers import (
 class ComercVinhosViewSet(viewsets.ModelViewSet):
     queryset = ComercVinhos.objects().order_by("-Ano", "Categoria", "Produto")
     serializer_class = ComercVinhosSerializer
+    #authentication_classes = [JWTAuthentication]
+    #permission_classes = [IsAuthenticated]
 
-    # /Comercio/?ano=2024&categoria=VINHO
     def get_queryset(self):
         queryset = ComercVinhos.objects().order_by("-Ano", "Categoria", "Produto")
         ano = self.request.query_params.get("ano")
@@ -31,7 +35,6 @@ class ComercVinhosViewSet(viewsets.ModelViewSet):
             queryset = queryset.filter(Produto__icontains=produto)
         return queryset
 
-    # /Comercio/total_por_ano/
     @action(detail=False, methods=['get'])
     def total_por_ano(self, request):
         pipeline = [
@@ -46,8 +49,9 @@ class ComercVinhosViewSet(viewsets.ModelViewSet):
 class ExportVinhosViewSet(viewsets.ModelViewSet):
     queryset = ExportVinhos.objects().order_by("-Ano", "Tipo")
     serializer_class = ExportVinhosSerializer
+    #authentication_classes = [JWTAuthentication]
+    #permission_classes = [IsAuthenticated]
 
-    # /Exportacao/?ano=2024&pais=França
     def get_queryset(self):
         queryset = ExportVinhos.objects().order_by("-Ano", "Tipo")
         ano = self.request.query_params.get("ano")
@@ -62,7 +66,6 @@ class ExportVinhosViewSet(viewsets.ModelViewSet):
             queryset = queryset.filter(Tipo__icontains=tipo)
         return queryset
 
-    # /Exportacao/top_paises/?limit=5
     @action(detail=False, methods=['get'])
     def top_paises(self, request):
         limit = int(request.query_params.get("limit", 5))
@@ -79,8 +82,9 @@ class ExportVinhosViewSet(viewsets.ModelViewSet):
 class ImportVinhosViewSet(viewsets.ModelViewSet):
     queryset = ImportVinhos.objects().order_by("-Ano", "Tipo")
     serializer_class = ImportVinhosSerializer
+    #authentication_classes = [JWTAuthentication]
+    #permission_classes = [IsAuthenticated]
 
-    # /Importacao/?ano=2024&pais=Chile
     def get_queryset(self):
         queryset = ImportVinhos.objects().order_by("-Ano", "Tipo")
         ano = self.request.query_params.get("ano")
@@ -100,8 +104,9 @@ class ImportVinhosViewSet(viewsets.ModelViewSet):
 class ProdVinhosViewSet(viewsets.ModelViewSet):
     queryset = ProdVinhos.objects().order_by("-Ano", "Categoria", "Produto")
     serializer_class = ProdVinhosSerializer
+    #authentication_classes = [JWTAuthentication]
+    #permission_classes = [IsAuthenticated]
 
-    # /Producao/?ano=2024&categoria=Espumante
     def get_queryset(self):
         queryset = ProdVinhos.objects().order_by("-Ano", "Categoria", "Produto")
         ano = self.request.query_params.get("ano")
@@ -116,7 +121,6 @@ class ProdVinhosViewSet(viewsets.ModelViewSet):
             queryset = queryset.filter(Produto__icontains=produto)
         return queryset
 
-    # /Producao/total_por_ano/
     @action(detail=False, methods=['get'])
     def total_por_ano(self, request):
         pipeline = [
@@ -131,8 +135,9 @@ class ProdVinhosViewSet(viewsets.ModelViewSet):
 class ProcessVinhosViewSet(viewsets.ModelViewSet):
     queryset = ProcessVinhos.objects().order_by("-Ano", "Tipo", "Cultivar")
     serializer_class = ProcessVinhosSerializer
+    #authentication_classes = [JWTAuthentication]
+    #permission_classes = [IsAuthenticated]
 
-    # /Processamento/?ano=2024&cultivar=Bordo
     def get_queryset(self):
         queryset = ProcessVinhos.objects().order_by("-Ano", "Tipo", "Cultivar")
         ano = self.request.query_params.get("ano")
@@ -150,6 +155,7 @@ class ProcessVinhosViewSet(viewsets.ModelViewSet):
 
 # COMPARATIVO ENTRE PRODUÇÃO E EXPORTAÇÃO
 @api_view(['GET'])
+@permission_classes([IsAuthenticated])
 def comparativo_producao_exportacao(request, ano):
     try:
         ano = int(ano)

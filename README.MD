@@ -260,7 +260,7 @@ Análise comparativa entre produção e exportação.
 ## 🛠️ Stack Tecnológico
 
 ### Backend
-- **Django 4.2+** - Framework web
+- **Django 5.2+** - Framework web
 - **Django REST Framework** - API RESTful
 - **MongoEngine** - ODM para MongoDB
 - **python-decouple** - Gerenciamento de variáveis
@@ -272,11 +272,11 @@ Análise comparativa entre produção e exportação.
 - **BeautifulSoup4** - Web scraping
 
 ### Database
-- **MongoDB 7.0** - Banco de dados NoSQL
+- **MongoDB 8.2** - Banco de dados NoSQL
 - **PyMongo** - Driver Python para MongoDB
 
 ### Frontend
-- **React 18** - Biblioteca UI
+- **React** - Biblioteca UI
 - **Recharts** - Biblioteca de gráficos
 - **Lucide React** - Ícones
 - **Axios** - Cliente HTTP
@@ -284,7 +284,6 @@ Análise comparativa entre produção e exportação.
 ### Infraestrutura
 - **Docker & Docker Compose** - Containerização
 - **AWS S3** - Object storage (Data Lake)
-- **Nginx** - (Opcional) Reverse proxy
 
 ---
 
@@ -299,24 +298,21 @@ embrapa-wine-data/
 │   └── urls.py                    # Rotas da API
 ├── 📂 mongo/                      # Configuração MongoDB
 │   ├── connection.py              # Setup de conexão
-│   └── loaders/                   # Scripts de carga
+│   └── MongoDBLoaderFromS3.py     # Carga
 ├── 📂 src/spark/spark-apps/       # Pipeline ETL
 │   ├── scrap_embrapa.ipynb        # Extração
-│   ├── spark_transform.ipynb      # Transformação
-│   └── MongoDBLoaderFromS3.py     # Carga
+│   └── spark_transform.ipynb      # Transformação
 ├── 📂 wine-frontend/              # Aplicação React
 │   ├── src/
-│   │   ├── components/            # Componentes React
-│   │   ├── services/              # API clients
-│   │   └── App.js                 # Componente principal
-│   └── package.json
+│   │   ├── public/                # Componentes React
+│   │   └── src/                   # Componente principal
 ├── 📂 setup/                      # Configurações Django
 │   ├── settings.py
 │   └── urls.py
 ├── 📄 docker-compose.yml          # Orquestração
 ├── 📄 Dockerfile                  # Build Django
 ├── 📄 requirements.txt            # Dependências Python
-├── 📄 .env.example                # Template de variáveis
+├── 📄 .env                        # Template de variáveis
 └── 📄 README.md                   # Este arquivo
 ```
 
