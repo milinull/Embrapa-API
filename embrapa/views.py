@@ -5,14 +5,8 @@ from rest_framework import status
 from rest_framework.permissions import IsAuthenticated
 from rest_framework_simplejwt.authentication import JWTAuthentication
 
-from .models import ComercVinhos, ExportVinhos, ImportVinhos, ProdVinhos, ProcessVinhos
-from .serializers import (
-    ComercVinhosSerializer,
-    ExportVinhosSerializer,
-    ImportVinhosSerializer,
-    ProdVinhosSerializer,
-    ProcessVinhosSerializer,
-)
+from .models import *
+from .serializers import *
 
 
 # COMÉRCIO DE VINHOS

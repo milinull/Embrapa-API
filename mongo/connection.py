@@ -11,6 +11,7 @@ class DBconnectionHandler:
         user = config("MDB_USER")
         password = config("MDB_PASS")
 
+        # Url de conexão com o mongo, acessando como admin
         self.__connection_String = (
             f"mongodb://{user}:{password}@{host}:{port}/?authSource=admin"
         )
