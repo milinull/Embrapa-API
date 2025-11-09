@@ -1,0 +1,11 @@
+FROM apache/nifi:latest
+USER root
+
+# Criar diretório para drivers (caso precise adicionar outros no futuro)
+RUN mkdir -p /opt/nifi/drivers
+
+# Voltar para o usuário nifi
+USER nifi
+
+# Iniciar NiFi
+CMD ["../scripts/start.sh"]
